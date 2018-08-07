@@ -1,10 +1,10 @@
 .orders_edit {
 	position: absolute;
-	background-color: #f9fafbe7;
+	background-color: #f5f8fa;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	display: none;
+	display: flex;
 	justify-content: center;
 	.container {
 		max-width: 880px;
@@ -38,24 +38,57 @@
 	}
 	&_items {
 		width: 100%;
-		display: flex;
 		.item {
 			display: flex;
-			flex-wrap: wrap;
-			max-width: 272px;
-			width: 100%;
-			&:nth-child(2) {
-				margin: 0 32px;
+			&_main {
+				.item_select {
+					margin-right: 32px;
+					&_order {
+						width: 152px;
+					}
+					&_manager {
+						width: 160px;
+					}
+					&_status {
+						width: 160px;
+					}
+					&_origin {
+						width: 120px;
+					}
+					&_region {
+						width: 160px;
+					}
+				}
+				&-telefon {
+					width: 272px;
+					display: flex;
+					flex-wrap: wrap;
+					.item_name {
+						margin-top: 12px;
+						margin-bottom: 4px;
+						height: 10px; // &-two{
+						// 	margin-top: 12px;
+						// }
+					}
+					.item_form {
+						height: 32px;
+					}
+				}
+				&-delivery {
+					padding-left: 32px;
+					display: flex;
+					flex-wrap: wrap;
+				}
 			}
 			&_name {
-				font-family: "Exo2-Medium";
-				font-size: 16px;
-				font-weight: 500;
+				font-family: SourceSansPro;
+				font-size: 10px;
+				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: 1.25;
-				letter-spacing: normal;
-				color: #8a9ba8;
+				line-height: 1.6;
+				letter-spacing: 1px;
+				color: #919eab;
 				text-transform: uppercase;
 				margin-top: 12px;
 				width: 100%;
@@ -82,7 +115,7 @@
 				appearance: none;
 				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
 			}
-			&_form .item_form{
+			&_form .item_form {
 				width: 100%;
 				border-radius: 4px;
 				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
@@ -93,6 +126,7 @@
 					width: 100%;
 					border: none;
 					outline: none;
+					box-sizing: border-box;
 					&::placeholder {
 						text-transform: uppercase;
 						font-family: "Exo2-Semi";
@@ -104,6 +138,69 @@
 						letter-spacing: 0.8px;
 						color: #bfccd6;
 						padding-left: 12px;
+					}
+					&_city {
+						width: 360px;
+						padding: 0 0 0 10px;
+						height: 29px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_station {
+						width: 214px;
+						height: 29px;
+						padding: 0 10px 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_street {
+						width: 360px;
+						height: 29px;
+						padding: 0 0 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_house {
+						width: 61px;
+						height: 29px;
+						padding: 0 5px 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_entrance {
+						width: 92px;
+						height: 29px;
+						padding: 0 5px 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_floor {
+						width: 61px;
+						height: 29px;
+						padding: 0 5px 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
+					}
+					&_information {
+						width: 565px;
+						height: 29px;
+						padding: 0 10px;
+						&::placeholder {
+							padding: 0;
+							border-bottom: 1px solid #f4f6f8;
+						}
 					}
 				}
 			}
@@ -139,7 +236,6 @@
 				}
 			}
 			form {
-				width: 100%;
 				.item_textarea {
 					width: 100%;
 					resize: none;
@@ -159,23 +255,73 @@
 					overflow: auto;
 				}
 			}
-			.form {
-				&_chronology {
+			&_form {
+				border-radius: 4px;
+				background-color: rgba(255, 255, 255, 0);
+				border: solid 1px #d8e1e8;
+				&-client {
+					width: 576px;
+					margin-right: 32px;
+				}
+				&-email {
+					width: 272px;
+				}
+			
+			}
+			&_first {
+				margin-top: 12px;
+				margin-bottom: 32px;
+			}
+			&_second {
+				// margin-bottom: 12px;
+			}
+			&_third {
+				margin-bottom: 20px;
+			}
+			&_four {
+				&-item {
+					display: flex;
+					flex-wrap: wrap;
+					width: 272px;
+					&:nth-child(2) {
+						margin: 0 32px;
+					}
+					&:last-child {
+						margin-bottom: 62px;
+					}
+
 					.item {
-						&_name {}
-						&_textarea {
-							height: 224px;
+						&_name {
+							margin-top: 12px;
+							height: 16px;
+						}
+						&_form {
+							width: 100%;
 						}
 					}
 				}
-				&_comment {
-					.item {
-						&_name {}
-						&_textarea {
-							height: 96px;
-						}
-					}
+			}
+			&_delivery {
+				width: 576px;
+				display: flex;
+				flex-wrap: wrap;
+				background: #ffffff;
+			}
+			&_file {
+				position: relative;
+				overflow: hidden;
+				font-family: "Exo2-Semi";
+				font-size: 12px;
+				margin: 0;
+				display: flex;
+				align-items: center;
+				input[type="file"] {
+					display: none;
 				}
+				background: url("https://icongr.am/entypo/download.svg?color=bfccd6") 96%/16px no-repeat #fff;
+			}
+			&_time {
+				background: url("https://icongr.am/material/timer.svg?color=bfccd6") 96%/16px no-repeat #fff;	
 			}
 		}
 	}
@@ -223,7 +369,7 @@
 				}
 			}
 			.item_title {
-				border-top: 4px solid #e1e8ed;
+		
 				&_span {
 					font-family: "Exo2-Semi";
 					font-size: 14px;
@@ -270,6 +416,9 @@
 					}
 				}
 			}
+		}
+		.middle__brands_table_nav{
+			margin-top: 20px;
 		}
 	}
 	&_buttons {

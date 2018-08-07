@@ -115,75 +115,162 @@
 
 		<!-- WORKAREA -->
 		<div class="middle">
-			<div class="editing_task orders_edit">
+			<div class="orders_edit">
 				<div class="container">
-					<div class="editing_task_title">
+					<div class="orders_edit_title">
 						<span class="span span_text">Редактирование заказа</span>
 						<span class="span span_close js_span_close"></span>
 					</div>
-					<div class="editing_task_items">
-						<div class="item">
-							<span class="item_name">Менеджер ОКК</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
-							<span class="item_name">Поставщик</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
-							<span class="item_name">Выезд АСЦ</span>
-							<form class="item_form">
-								<input class="item_form_input" type="text" placeholder="Номер заявки, сервис, число">
-							</form>
-							<span class="item_name">№ заказа</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
-							<span class="item_name">Статус</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
+					<div class="orders_edit_items">
+						<div class="item item_first">
+							<div class="item_main">
+								<span class="item_name">№ заказа</span>
+								<select class="item_select item_select_order">
+									<option value="">Категория</option>
+									<option class="item_select_option">604919</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Менеджер</span>
+								<select class="item_select item_select_manager">
+									<option value="">Категория</option>
+									<option class="item_select_option">Овчинников Д.</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Статус</span>
+								<select class="item_select item_select_status">
+									<option value="">Категория</option>
+									<option class="item_select_option">В обработке</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Источник</span>
+								<select class="item_select item_select_origin">
+									<option value="">Категория</option>
+									<option class="item_select_option">Звонок</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Регион</span>
+								<select class="item_select item_select_region">
+									<option value="">Категория</option>
+									<option class="item_select_option">В обработке</option>
+								</select>
+							</div>
+
 						</div>
-						<div class="item">
-							<form class="item item_form">
-								<input type="text" placeholder="Номер заказа или другие данные…">
-							</form>
-							<form class="item item_form">
-								<input type="text" placeholder="Номер заказа или другие данные…">
-							</form>
-							<form class="item item_form">
-								<input type="text" placeholder="Номер заказа или другие данные…">
-							</form>
-							<form action="" class="form_comment">
-								<p>
-									<textarea class="item_textarea" name="text">Текст…</textarea>
-								</p>
-							</form>
+						<div class="item item_second">
+							<div class="item_main">
+								<span class="item_name">Клиент</span>
+								<form class="item_form item_form-client">
+									<input class="item_form_input" type="text" placeholder="Тарасова Юлия Сергеевна">
+								</form>
+							</div>
+							<div class="item_main">
+								<span class="item_name">электронная почта</span>
+								<form class="item_form item_form-email">
+									<input class="item_form_input" type="text" placeholder="client@gmail.com">
+								</form>
+							</div>
+
 						</div>
-						<div class="item">
-							<span class="item_name">Менеджер ОКК</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
-							<span class="item_name">Менеджер ОКК</span>
-							<select class="item_select">
-								<option value="">Категория</option>
-								<option class="item_select_option"></option>
-							</select>
-							<form class="item item_form">
-								<input type="text" placeholder="Номер заказа или другие данные…">
-							</form>
-							<input class="item item_date item_date_last" value="Дата отгрузки" type="date"></input>
+						<div class="item item_third">
+							<div class="item_main item_main-telefon">
+								<span class="item_name">Телефон</span>
+								<form class="item_form item_form">
+									<input class="item_form_input" type="text" placeholder="+7 800 800-00-00">
+								</form>
+								<span class="item_name item_name-two">Телефон доп</span>
+								<form class="item_form item_form">
+									<input class="item_form_input" type="text" placeholder="+7 800 800-00-00">
+								</form>
+							</div>
+							<div class="item_main item_main-delivery">
+								<span class="item_name">Адрес доставки</span>
+								<form class="item_form item_delivery">
+									<input class="item_form_input item_form_input_city" type="text" placeholder="Город">
+									<input class="item_form_input item_form_input_station" type="text" placeholder="Станция метро">
+									<input class="item_form_input item_form_input_street" type="text" placeholder="Улица">
+									<input class="item_form_input item_form_input_house" type="text" placeholder="Дом">
+									<input class="item_form_input item_form_input_entrance" type="text" placeholder="Подъезд">
+									<input class="item_form_input item_form_input_floor" type="text" placeholder="Этаж">
+									<input class="item_form_input item_form_input_information" type="text" placeholder="Дополнительная информация">
+								</form>
+							</div>
+						</div>
+						<div class="item item_four">
+							<div class="item_four-item">
+								<span class="item_name">Магазин</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">ASKO</option>
+								</select>
+								<span class="item_name">Способ оплаты</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">Безналичный</option>
+								</select>
+								<span class="item_name">Дата заказа</span>
+								<input class="item item_date item_date_last" type="date"></input>
+								<span class="item_name">Доверенность для ТК</span>
+								<label for="file-upload" class="item item_date item_file">
+									Загрузить
+									<input id="file-upload" accept="image/jpeg" class="item item_date item_file" type="file" />
+								</label>
+							</div>
+							<div class="item_four-item">
+								<span class="item_name">Поставщик</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">ТЕХПОРТ</option>
+								</select>
+								<span class="item_name">Счет поставщика</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="0000000">
+								</form>
+								<span class="item_name">Дата доставки</span>
+								<input class="item item_date item_date_last" value="Дата отгрузки" type="date"></input>
+								<span class="item_name">Документ от поставщика</span>
+								<label for="file-upload" class="item item_date item_file">
+									Загрузить
+									<input id="file-upload" accept="image/jpeg" class="item item_date item_file" type="file" />
+								</label>
+							</div>
+							<div class="item_four-item">
+								<span class="item_name">№ заказа поставщика</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="су000587">
+								</form>
+								<span class="item_name">Счет РЕТ</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="0000000">
+								</form>
+								<span class="item_name">Интервал</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input item_time" type="text" placeholder="08:00 – 18:00">
+								</form>
+							</div>
 						</div>
 					</div>
-					<div class="editing_task_table">
-						<span class="editing_task_table_title">Состав и действия с заказом</span>
-						<div class="editing_task_table_items">
+					<div class="orders_edit_table">
+						<div class="middle__brands_table_nav">
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Состав заказа
+								<span class="middle__brands_table_nav_h3_span">2</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Доставка
+								<span class="middle__brands_table_nav_h3_span">5</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Подключение
+								<span class="middle__brands_table_nav_h3_span">0</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Рекламации
+								<span class="middle__brands_table_nav_h3_span">0</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Комментарий
+							</h3>
+						</div>
+						<div class="orders_edit_table_items">
 							<div class="item item_title">
 								<span class="item_title_span model">Модель</span>
 								<span class="item_title_span price">Цена</span>
