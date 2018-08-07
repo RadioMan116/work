@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #30404d;
+  height: 56px;
+
+  .header-inner & {
+    flex-direction: row-reverse;
+  }
+
+  &__blocks {
+	display: flex;
+	height: 100%;
+	align-items: center;
+  }
+
+  &__phone {
+  }
+
+  &__block {
+    .menu {
+      &__link {
+        font-family: "Exo2-Regular";
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #738694;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+    &_authorization{
+      margin:0 0 0 auto;
+    }
+  }
+}

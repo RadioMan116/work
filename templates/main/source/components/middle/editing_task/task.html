@@ -1,0 +1,121 @@
+<div class="editing_task">
+	<div class="container">
+		<div class="editing_task_title">
+			<span class="span span_text">Редактирование задачи</span>
+			<span class="span span_close js_span_close"></span>
+		</div>
+		<div class="editing_task_items">
+			<div class="item">
+				<span class="item_name">Менеджер ОКК</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Поставщик</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Выезд АСЦ</span>
+				<form class="item_form">
+					<input class="item_form_input" type="text" placeholder="Номер заявки, сервис, число">
+				</form>
+				<span class="item_name">№ заказа</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Статус</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Итог</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+			</div>
+			<div class="item">
+				<span class="item_name">Дата принятия рекламации</span>
+				<input class="item_date" type="date"></input>
+				<span class="item_name">Причина обращения</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Требования клиента</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Ошибка менеджера</span>
+				<select class="item_select">
+					<option value="">Категория</option>
+					<option class="item_select_option">{{ item }}</option>
+				</select>
+				<span class="item_name">Дата доставки</span>
+				<input class="item_date" type="date">
+				<span class="item_name">Дата решения</span>
+				<input class="item_date" type="date">
+			</div>
+			<div class="item">
+				<span class="item_name">Хронология</span>
+				<form action="" class="form_chronology">
+
+					<textarea class="item_textarea" name="text">Текст…</textarea>
+				</form>
+				<span class="item_name">Комментарий</span>
+				<form action="" class="form_comment">
+					<p>
+						<textarea class="item_textarea" name="text">Текст…</textarea>
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="editing_task_table">
+			<span class="editing_task_table_title">Состав и действия с заказом</span>
+			<div class="editing_task_table_items">
+				<div class="item item_title">
+					<span class="item_title_span model">Модель</span>
+					<span class="item_title_span price">Цена</span>
+					<span class="item_title_span quantity">Кол-во</span>
+					<span class="item_title_span action">Действие</span>
+					<span class="item_title_span model">Модель</span>
+					<span class="item_title_span price">Цена</span>
+				</div>
+				<div class="item item_block">
+					<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+					<span class="item_block_span price">59 990 ₽</span>
+					<span class="item_block_span quantity">1</span>
+					<span class="item_block_span action">
+						<span class="action_state action_state_orange">Замена</span>
+					</span>
+					<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+					<span class="item_block_span price">59 990 ₽</span>
+				</div>
+				<div class="item item_block">
+					<span class="item_block_span model">Стиральная машина BEKO WKB 51001 M</span>
+					<span class="item_block_span price">11 980 ₽</span>
+					<span class="item_block_span quantity">1</span>
+					<span class="item_block_span action">
+						<span class="action_state action_state_red">возврат</span>
+					</span>
+					<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+					<span class="item_block_span price">-11 980 ₽</span>
+				</div>
+			</div>
+		</div>
+		<div class="editing_task_buttons">
+			<a href=" # " class="button button_save">
+				сохранить
+				<span class="img"></span>
+			</a>
+			<a href=" # " class="button button_delete">
+				удалить
+				<span class="img"></span>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- /.editeing_task -->

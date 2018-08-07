@@ -1,0 +1,331 @@
+.orders_edit {
+	position: absolute;
+	background-color: #f9fafbe7;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+	justify-content: center;
+	.container {
+		max-width: 880px;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 28px;
+	}
+	&_title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.span {
+			&_text {
+				font-family: "Exo2-Regular";
+				font-size: 24px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.17;
+				letter-spacing: normal;
+				color: #293742;
+			}
+			&_close {
+				background-image: url(https://icongr.am/material/close.svg?color=919eab);
+				background-size: cover;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+	&_items {
+		width: 100%;
+		display: flex;
+		.item {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 272px;
+			width: 100%;
+			&:nth-child(2) {
+				margin: 0 32px;
+			}
+			&_name {
+				font-family: "Exo2-Medium";
+				font-size: 16px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				color: #8a9ba8;
+				text-transform: uppercase;
+				margin-top: 12px;
+				width: 100%;
+				margin-bottom: 4px;
+			}
+			&_select {
+				height: 32px;
+				width: 100%;
+				border-radius: 4px;
+				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+				border: solid 1px #d8e1e8;
+				padding-left: 12px;
+				font-family: "Exo2-Semi";
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.33;
+				letter-spacing: 0.8px;
+				color: #bfccd6;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
+			}
+			&_form .item_form{
+				width: 100%;
+				border-radius: 4px;
+				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+				border: solid 1px #d8e1e8;
+				height: 32px;
+				&_input {
+					background-color: #ffffff;
+					width: 100%;
+					border: none;
+					outline: none;
+					&::placeholder {
+						text-transform: uppercase;
+						font-family: "Exo2-Semi";
+						font-size: 12px;
+						font-weight: 600;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: 0.8px;
+						color: #bfccd6;
+						padding-left: 12px;
+					}
+				}
+			}
+			&_date {
+				width: 100%;
+				height: 32px;
+				border-radius: 4px;
+				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+				border: solid 1px #d8e1e8;
+				text-transform: uppercase;
+				font-family: "Exo2-Semi";
+				font-size: 12px;
+				font-weight: 600;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.33;
+				letter-spacing: 0.8px;
+				color: #bfccd6;
+				padding-left: 12px;
+				&::-webkit-calendar-picker-indicator {
+					width: 13px;
+					height: 13px;
+					background: url("https://icongr.am/fontawesome/calendar.svg?color=bfccd6") no-repeat center;
+					background-size: contain;
+					color: transparent;
+					margin-right: 12px;
+				}
+				&::-webkit-clear-button {
+					display: none;
+				}
+				&::-webkit-inner-spin-button {
+					display: none;
+				}
+			}
+			form {
+				width: 100%;
+				.item_textarea {
+					width: 100%;
+					resize: none;
+					border-radius: 4px;
+					box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+					border: solid 1px #d8e1e8;
+					text-transform: uppercase;
+					font-family: "Exo2-Semi";
+					font-size: 12px;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33;
+					letter-spacing: 0.8px;
+					color: #bfccd6;
+					padding: 8px 12px;
+					overflow: auto;
+				}
+			}
+			.form {
+				&_chronology {
+					.item {
+						&_name {}
+						&_textarea {
+							height: 224px;
+						}
+					}
+				}
+				&_comment {
+					.item {
+						&_name {}
+						&_textarea {
+							height: 96px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&_table {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 33px;
+		&_title {
+			font-family: "Exo2-Medium";
+			font-size: 16px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.25;
+			letter-spacing: normal;
+			color: #30404d;
+			margin: 32px 16px 12px;
+		}
+		&_items {
+			.item {
+				border-radius: 4px;
+				background-color: #ffffff;
+				border: solid 1px #e1e8ed;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				span {
+					padding-left: 16px;
+				}
+				.model {
+					width: 280px;
+				}
+				.price {
+					width: 80px;
+				}
+				.quantity {
+					width: 72px;
+				}
+				.action {
+					width: 98px;
+					&_orange {}
+					&_red {}
+					&_green {}
+				}
+			}
+			.item_title {
+				border-top: 4px solid #e1e8ed;
+				&_span {
+					font-family: "Exo2-Semi";
+					font-size: 14px;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1;
+					letter-spacing: normal;
+					color: #bfccd6;
+				}
+			}
+			.item_block {
+				border-top: none;
+				&_span {
+					font-family: "SourceSansPro";
+					font-size: 14px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.43;
+					letter-spacing: normal;
+					color: #293742;
+				}
+				.action {
+					padding-left: 12px;
+				}
+				.action_state {
+					padding: 3.5px 15.5px;
+					border-radius: 3px;
+					font-size: 10px;
+					font-weight: bold;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.2;
+					letter-spacing: 0.8px;
+					text-align: center;
+					color: #ffffff;
+					text-transform: uppercase;
+					&_orange {
+						background: #f2b824;
+					}
+					&_red {
+						background: #f55656;
+					}
+				}
+			}
+		}
+	}
+	&_buttons {
+		display: flex;
+		justify-content: space-between;
+		.button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 146px;
+			height: 40px;
+			font-family: "Exo2-Semi";
+			font-size: 12px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.25;
+			letter-spacing: 0.8px;
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			outline: none;
+			border-radius: 4px;
+			border: solid 1px #394b5985;
+			transition: 0.2s ease-in-out;
+			padding: 12px 12px 13px;
+			opacity: .4;
+			&_save {
+				background-color: #4580e6;
+				.img {
+					background-image: url("https://icongr.am/clarity/check.svg?color=ffffff");
+					background-size: contain;
+					width: 16px;
+					height: 16px;
+					margin: 0 0 0 auto;
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+			&_delete {
+				background-color: #f55656;
+				.img {
+					background-image: url("https://icongr.am/entypo/trash.svg?color=ffffff");
+					background-size: contain;
+					width: 16px;
+					height: 16px;
+					margin: 0 0 0 auto;
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&_active {
+		display: flex;
+	}
+}

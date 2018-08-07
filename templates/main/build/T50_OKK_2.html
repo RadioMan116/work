@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style>
+		@font-face {
+						font-family: "Geometria";
+						src: url('css/fonts/Geometria/Geometria.woff2') format('woff2'),
+						url('css/fonts/Geometria/Geometria.woff') format('woff'),
+						url('css/fonts/Geometria/Geometria.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+						font-display: optional;
+				}
+
+				.font-marketsans .geometria {
+						font-family: "Geometria", "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif
+				}
+	</style>
+	<!--загрузка кастомных шрифтов -->
+
+	<script>
+		var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
+		  (localStorage && localStorage.getItem('ebay-font'));
+		if (useCustomFont) {
+			document.documentElement.classList.add('font-marketsans');
+		}
+	</script>
+	<!--загрузка кастомных шрифтов -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+		<header class="header geometria">
+			<div class="container">
+				<div class="header__blocks">
+					<div class="header__block">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								T–50
+								<span class="logo__link_span">:re</span>
+							</a>
+						</div>
+						<!-- /.logo -->
+					</div>
+					<div class="header__block header__block_wide">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<span class="hamburger__screen-reader-text">Menu</span>
+
+						</button>
+						<div class="menu" id="js-menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Каталог</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Заказы</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Отчеты</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контроль качества</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Информационный портал</a>
+									</li>
+
+								</ul>
+							</nav>
+						</div>
+						<!--end menu-->
+
+					</div>
+					<div class="header__block header__block_authorization">
+						<div class="authorization">
+							<div class="authorization__list">
+								<div class="authorization__item authorization__item_img">
+									<img class="authorization__avatar" src="https://icongr.am/clarity/user.svg" alt="">
+								</div>
+								<div class="authorization__item authorization__item_text">
+									<h4 class="authorization__h4 authorization__h4_name">Алексей Григорьев</h4>
+									<h4 class="authorization__h4 authorization__h4_subname">Тестовый аккаунт</h4>
+								</div>
+								<div class="authorization__item authorization__item_link">
+									<img src="images/calendar.svg" alt="" class="authorization__link">
+									<img src="images/settings.svg" alt="" class="authorization__link">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- WORKAREA -->
+		<div class="middle">
+			<div class="editing_task">
+				<div class="container">
+					<div class="editing_task_title">
+						<span class="span span_text">Редактирование задачи</span>
+						<span class="span span_close js_span_close"></span>
+					</div>
+					<div class="editing_task_items">
+						<div class="item">
+							<span class="item_name">Менеджер ОКК</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Поставщик</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Выезд АСЦ</span>
+							<form class="item_form">
+								<input class="item_form_input" type="text" placeholder="Номер заявки, сервис, число">
+							</form>
+							<span class="item_name">№ заказа</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Статус</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Итог</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+						</div>
+						<div class="item">
+							<span class="item_name">Дата принятия рекламации</span>
+							<input class="item_date" type="date"></input>
+							<span class="item_name">Причина обращения</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Требования клиента</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Ошибка менеджера</span>
+							<select class="item_select">
+								<option value="">Категория</option>
+								<option class="item_select_option"></option>
+							</select>
+							<span class="item_name">Дата доставки</span>
+							<input class="item_date" type="date">
+							<span class="item_name">Дата решения</span>
+							<input class="item_date" type="date">
+						</div>
+						<div class="item">
+							<span class="item_name">Хронология</span>
+							<form action="" class="form_chronology">
+
+								<textarea class="item_textarea" name="text">Текст…</textarea>
+							</form>
+							<span class="item_name">Комментарий</span>
+							<form action="" class="form_comment">
+								<p>
+									<textarea class="item_textarea" name="text">Текст…</textarea>
+								</p>
+							</form>
+						</div>
+					</div>
+					<div class="editing_task_table">
+						<span class="editing_task_table_title">Состав и действия с заказом</span>
+						<div class="editing_task_table_items">
+							<div class="item item_title">
+								<span class="item_title_span model">Модель</span>
+								<span class="item_title_span price">Цена</span>
+								<span class="item_title_span quantity">Кол-во</span>
+								<span class="item_title_span action">Действие</span>
+								<span class="item_title_span model">Модель</span>
+								<span class="item_title_span price">Цена</span>
+							</div>
+							<div class="item item_block">
+								<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+								<span class="item_block_span price">59 990 ₽</span>
+								<span class="item_block_span quantity">1</span>
+								<span class="item_block_span action">
+									<span class="action_state action_state_orange">Замена</span>
+								</span>
+								<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+								<span class="item_block_span price">59 990 ₽</span>
+							</div>
+							<div class="item item_block">
+								<span class="item_block_span model">Стиральная машина BEKO WKB 51001 M</span>
+								<span class="item_block_span price">11 980 ₽</span>
+								<span class="item_block_span quantity">1</span>
+								<span class="item_block_span action">
+									<span class="action_state action_state_red">возврат</span>
+								</span>
+								<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+								<span class="item_block_span price">-11 980 ₽</span>
+							</div>
+						</div>
+					</div>
+					<div class="editing_task_buttons">
+						<a href=" # " class="button button_save">
+							сохранить
+							<span class="img"></span>
+						</a>
+						<a href=" # " class="button button_delete">
+							удалить
+							<span class="img"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.editeing_task -->
+			<div class="content">
+				<div class="middle__title">
+					<h2 class="middle__title_h2">Контроль качества
+					</h2>
+				</div>
+				<div class="middle__brands">
+					<div class="middle__brands_table">
+						<div class="middle__brands_table_nav">
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Рекламации
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Проблемы
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Отзывы
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Задачи ОКК
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Архив
+							</h3>
+							<div class="middle__brands_table_nav_download js_download">
+								<span class="span_download"></span>
+							</div>
+							<div class="pagination">
+								<a href="#" class="pagination__prev">
+									<img class="pagination__prev_img" src="images/triangle-left.svg" alt="">
+								</a>
+								<a href="#" class="pagination__item">1</a>
+								<a href="#" class="pagination__item">2</a>
+								<a href="#" class="pagination__item">6</a>
+								<a href="#" class="pagination__more">...</a>
+								<a href="#" class="pagination__next">
+									<img class="pagination__next_img" src="images/triangle-right.svg" alt="">
+								</a>
+								</a>
+							</div>
+							<!-- /.pagination -->
+						</div>
+						<div class="middle__brands_table_title middle__brands_table_title__index_6">
+							<span class="span span__order">Заказ</span>
+							<span class="span span__score">Магазин
+							</span>
+							<span class="span span__manager">
+								<span class="span__model_bars"></span>Менеджер
+							</span>
+							<span class="span span__date">Дата</span>
+							<span class="span span__order_list">Состав заказа</span>
+							<span class="span span__client">Клиент</span>
+							<span class="span span__call">Звонок</span>
+							<span class="span span__okk">ОКК</span>
+							<span class="span span__feedback">Отзыв</span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Водонагреватель electrolux ewh 50 royal</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">Кудрявцева Елизавета Петровна</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_6">
+							<span class="span span__model">614418</span>
+							<span class="span span__sale">Smeg</span>
+							<span class="span span__manager">Луковников С.</span>
+							<span class="span span__date">22.04.18</span>
+							<span class="span span__order_list">
+								<span class="span__order_list_span">Автомобильный шампунь Karcher RM 527 Эко 5л</span>
+								<span class="span__order_list_span">Аппарат высокого давления K 5 COMPACT</span>
+								<span class="span__order_list_span">Пенное сопло FJ 6
+								</span>
+								<span class="span__order_list_span">Угловая струйная трубка</span>
+							</span>
+							<span class="span span__client">
+								<span class="span__client_info">
+									<span class="span__client_info_name">Имя</span>
+									<span class="span__client_info_mainname">ООО «Бахетле-Алтуфьево»</span>
+								</span>
+								<span class="span__client_info">Телефон
+									<span class="span__client_info_mobile">89653819991</span>
+
+								</span>
+								<span class="span__client_info">Email
+									<span class="span__client_info_email">adriatica@mail.ru</span>
+
+								</span>
+								<span class="span__client_info">Адрес
+									<span class="span__client_info_address">420107, Республика ТАТАРСТАН, ГОРОД КАЗАНЬ, УЛИЦА ПАВЛЮХИНА, ДОМ 57, КАБИНЕТ 306</span>
+								</span>
+							</span>
+							<span class="span span__call">
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">1</b>
+										–недозвон
+									</span>
+									<span class="span__call_info_date">
+										03.04.18
+									</span>
+								</div>
+								<div class="div__call_info">
+									<span class="span__call_info">
+										<b class="b__call_info">2</b>
+										–дозвон
+									</span>
+									<span class="span__call_info_date">
+										04.04.18
+									</span>
+								</div>
+							</span>
+							<span class="span span__purchase">Михеев А.</span>
+							<span class="span span__unid">Нет
+							</span>
+							<span class="span__math js_span__math"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content__news">
+				<div class="middle__news">
+					<div class="middle__news__title">
+						<h2 class="h2 middle__news__title_h2">Задачи ОКК</h2>
+						<span class="span middle__news__title_span">Скрыть
+							<img class="img" src="images/arrow-right.svg" alt="">
+						</span>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Gaggenau</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">529366</span>
+						</h5>
+						<h6 class="middle__news__block_h6">На плите не работаю конфорки, плиту чинили несколько раз, несколько месяцев уже это продолжается, то деталей нет, то еще что-то, они уже ожидают документы о том, что плиту надо менять полностью, но клиентка вся в переживаниях, кто это будет делать
+							и как вообще. Доставлял ооо «Антей»; она переживает, что это какая-то непонятная организация. Успокоила, надо ей позвонить и сориентировать, что ей делать, Вита, будь добра. Тетя прекрасная и приятная, только немного уже паникует. 89168082301 Наталья
+							Николаевна</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Blanco</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">558412</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Течет кран</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Kaiser</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">602246</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Чайник сломался</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Gaggenau</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">529366</span>
+						</h5>
+						<h6 class="middle__news__block_h6">На плите не работаю конфорки, плиту чинили несколько раз, несколько месяцев уже это продолжается, то деталей нет, то еще что-то, они уже ожидают документы о том, что плиту надо менять полностью, но клиентка вся в переживаниях, кто это будет делать
+							и как вообще. Доставлял ооо «Антей»; она переживает, что это какая-то непонятная организация. Успокоила, надо ей позвонить и сориентировать, что ей делать, Вита, будь добра. Тетя прекрасная и приятная, только немного уже паникует. 89168082301 Наталья
+							Николаевна</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Blanco</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">558412</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Течет кран</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Kaiser</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">602246</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Чайник сломался</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Gaggenau</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">529366</span>
+						</h5>
+						<h6 class="middle__news__block_h6">На плите не работаю конфорки, плиту чинили несколько раз, несколько месяцев уже это продолжается, то деталей нет, то еще что-то, они уже ожидают документы о том, что плиту надо менять полностью, но клиентка вся в переживаниях, кто это будет делать
+							и как вообще. Доставлял ооо «Антей»; она переживает, что это какая-то непонятная организация. Успокоила, надо ей позвонить и сориентировать, что ей делать, Вита, будь добра. Тетя прекрасная и приятная, только немного уже паникует. 89168082301 Наталья
+							Николаевна</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Blanco</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">558412</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Течет кран</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+					<div class="middle__news__blocks middle__news__blocks_index_5">
+						<div class="middle__news__block_date">
+							<h6 class="middle__news__block_date_h6">22.11.17</h6>
+							<h5 class="middle__news__block_date_h5">Kaiser</h5>
+						</div>
+						<h5 class="middle__news__block_h5">Задача
+							<span class="middle__news__block_h5_span">602246</span>
+						</h5>
+						<h6 class="middle__news__block_h6">Чайник сломался</h6>
+						<div class="middle__news__block_border"></div>
+					</div>
+				</div>
+			</div>
+			<!-- END WORKAREA -->
+			<!-- /.content -->
+
+			<!-- /.middle__container -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/script.min.js"></script>
+</body>
+
+</html>

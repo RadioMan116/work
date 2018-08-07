@@ -1,0 +1,51 @@
+.authorization {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    &_text {
+      display: block;
+      padding-left: 8px;
+      padding-right: 24px;
+      border-right: 1px solid #394b59;
+    }
+  }
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: white;
+  }
+
+  &__h4 {
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    margin: 0;
+    &_name {
+      font-family: "Exo2-Semi";
+      font-weight: 600;
+      color: #ffffff;
+    }
+    &_subname {
+      font-family:"SourceSansPro";
+      font-weight: normal;
+      line-height: 1.43;
+      color: #738694;
+    }
+  }
+
+  &__link {
+    width: 14px;
+    height: 16px;
+    margin-left: 24px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

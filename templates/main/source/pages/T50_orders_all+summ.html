@@ -1,0 +1,538 @@
+{% include 'head/head.html' %}
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+		{% include 'header/global/header.html' %}
+		<!-- WORKAREA -->
+		<div class="middle">
+				{% include 'middle/T50:RE_orders_edit/T50:RE_orders_edit.html' %}
+			<div class="content middle__content">
+				<div class="middle__title_index_10">
+					<h2 class="middle__title_h2">
+						Фильтр заказов
+					</h2>
+					<div class="middle__title__select">
+						<form class="item item_form">
+							<input type="text" placeholder="Номер заказа или другие данные…">
+						</form>
+						<input class="item item_date" value="Дата заказа" type="date"></input>
+						<input class="item item_date" value="Дата отгрузки" type="date"></input>
+						<select class="middle__title__select_score item" required>
+							<option value="">Все менеджеры</option>
+						</select>
+						<select class="middle__title__select_score item" required>
+							<option value="">Все магазины</option>
+						</select>
+						<select class="middle__title__select_score item" required>
+							<option value="">Любой источник</option>
+						</select>
+						<select class="middle__title__select_score item" required>
+							<option value="">Все менеджеры</option>
+						</select>
+						<select class="middle__title__select_score item" required>
+							<option value="">Способ оплаты</option>
+						</select>
+						<input class="item item_date item_date_last" value="Дата отгрузки" type="date"></input>
+					</div>
+					<div class="middle__title__pagination">
+						<select class="middle__title__pagination_select">
+							<option value="">город</option>
+							<option class="middle__title__select_option">Москва</option>
+						</select>
+						<h4 class="middle__title__pagination_h4">Найдено
+							<span class="middle__title__pagination_h4_span">
+								1084
+							</span>
+							моделей(
+							<span class="middle__title__pagination_h4_span">50 </span> &nbsp на странице)
+						</h4>
+						{% include 'pagination/pagination.html' %}
+					</div>
+				</div>
+				<div class="middle__brands middle__brands_index_10">
+					<div class="middle__brands_table">
+						<div class="middle__brands_table_title">
+							<span class="span span__number">Номер</span>
+							<span class="span span__manager">
+								<span class="span__model_bars"></span>Менеджер
+								<span class="span__model_arrows"></span>
+							</span>
+							<span class="span span__score">Магазин</span>
+							<span class="span span__purveyor">Поставщик
+								<span class="span__model_arrows"></span>
+							</span>
+							<span class="span span__status">Статус</span>
+							<span class="span span__created">Создан</span>
+							<span class="span span__shipped">Отгружен</span>
+							<span class="span span__consist">Состав</span>
+							<span class="span span__sum">Сумма</span>
+							<span class="span span__payment">Оплата</span>
+							<span class="span span__full_name">ФИО</span>
+							<span class="span span__source">Источник</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «ФараонЭ</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_grey">
+								<span class="span__status_circle"></span>не согласовано</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_brown">
+								<span class="span__status_circle"></span>назначена</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_grey">
+								<span class="span__status_circle"></span>не согласовано</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_brown">
+								<span class="span__status_circle"></span>назначена</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_brown">
+								<span class="span__status_circle"></span>назначена</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_grey">
+								<span class="span__status_circle"></span>не согласовано</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+						<div class="middle__brands_table_block">
+							<span class="span span__number">R-X 690 GU X</span>
+							<span class="span span__manager">Михаил Борисов</span>
+							<span class="span span__score">DeLonghi
+								<b class="score_b">0658412346966987</b>
+							</span>
+							<span class="span span__purveyor">Встройка-Соло
+								<b class="score_b">762321612373556746</b>
+							</span>
+							<span class="span span__status span__status_orange">
+								<span class="span__status_circle"></span>Ждем оплаты</span>
+							<span class="span span__created">28.02.2018</span>
+							<span class="span span__shipped">02.03.2018</span>
+							<span class="span span__consist">
+								<span class="span__consist_img js-span__consist_img"></span>
+							</span>
+							<span class="span span__sum">49 950
+								<span class="span__cost">₽</span>
+							</span>
+							<span class="span span__payment">Налич.</span>
+							<span class="span span__full_name">Юлия Филиппова «Фа</span>
+							<span class="span span__source">Телефон</span>
+						</div>
+					</div>
+				</div>
+				<div class="middle__sidebar">
+					<div class="middle__sidebar_title">
+						<span class="span span_name">Все статусы
+							<span class="span_name_img js_close_sidebar"></span>
+						</span>
+						<span class="span span_orders">ЗАКАЗОВ
+							<span class="span_number">30</span>
+						</span>
+						<span class="span span_goods">ТОВАРОВ
+							<span class="span_number">36</span>
+						</span>
+						<span class="span span_sale">ПРОДАЖНАЯ
+							<span class="span_number">1 027 920</span>
+						</span>
+						<span class="span span_purchasing">ЗАКУПОЧНАЯ
+							<span class="span_number">867992</span>
+						</span>
+						<span class="span span_commission">КОМИССИЯ
+							<span class="span_number">155218</span>
+						</span>
+					</div>
+					<div class="middle__sidebar_items">
+						<div class="item item_failure">
+							<span class="span span_name">Отказ</span>
+							<span class="span span_orders">3</span>
+							<span class="span span_goods">5</span>
+							<span class="span span_sale">113840</span>
+							<span class="span span_purchasing">99335</span>
+							<span class="span span_commission">14505</span>
+						</div>
+						<div class="item item_decorated">
+							<span class="span span_name">Оформлен</span>
+							<span class="span span_orders">1</span>
+							<span class="span span_goods">1</span>
+							<span class="span span_sale">0</span>
+							<span class="span span_purchasing">0</span>
+							<span class="span span_commission">0</span>
+						</div>
+						<div class="item item_delivery">
+							<span class="span span_name">Назначена доставка</span>
+							<span class="span span_orders">10</span>
+							<span class="span span_goods">10</span>
+							<span class="span span_sale">271510</span>
+							<span class="span span_purchasing">220 302</span>
+							<span class="span span_commission">47808</span>
+						</div>
+						<div class="item item_payment">
+							<span class="span span_name">Ждём оплату</span>
+							<span class="span span_orders">3</span>
+							<span class="span span_goods">7</span>
+							<span class="span span_sale">137140</span>
+							<span class="span span_purchasing">106170</span>
+							<span class="span span_commission">30470</span>
+						</div>
+						<div class="item item_supply">
+							<span class="span span_name">Ждём поставки</span>
+							<span class="span span_orders">2</span>
+							<span class="span span_goods">2</span>
+							<span class="span span_sale">42300</span>
+							<span class="span span_purchasing">36213</span>
+							<span class="span span_commission">6087</span>
+						</div>
+						<div class="item item_processing">
+							<span class="span span_name">В обработке</span>
+							<span class="span span_orders">10</span>
+							<span class="span span_goods">8</span>
+							<span class="span span_sale">369 650</span>
+							<span class="span span_purchasing">321 282</span>
+							<span class="span span_commission">47558</span>
+						</div>
+						<div class="item item_new">
+							<span class="span span_name">Новый</span>
+							<span class="span span_orders">1</span>
+							<span class="span span_goods">3</span>
+							<span class="span span_sale">93480</span>
+							<span class="span span_purchasing">0</span>
+							<span class="span span_commission">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END WORKAREA -->
+			<!-- /.content -->
+
+			<!-- /.middle__container -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/script.min.js"></script>
+</body>
+
+</html>

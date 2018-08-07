@@ -1,0 +1,20 @@
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  &__link {
+    display: flex;
+    height: 24px;
+    font-family: "Exo2-Bold";
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    color: #f55656;
+    &_span {
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+}

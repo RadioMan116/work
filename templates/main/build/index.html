@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style>
+		@font-face {
+						font-family: "Geometria";
+						src: url('css/fonts/Geometria/Geometria.woff2') format('woff2'),
+						url('css/fonts/Geometria/Geometria.woff') format('woff'),
+						url('css/fonts/Geometria/Geometria.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+						font-display: optional;
+				}
+
+				.font-marketsans .geometria {
+						font-family: "Geometria", "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif
+				}
+	</style>
+	<!--загрузка кастомных шрифтов -->
+
+	<script>
+		var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
+		  (localStorage && localStorage.getItem('ebay-font'));
+		if (useCustomFont) {
+			document.documentElement.classList.add('font-marketsans');
+		}
+	</script>
+	<!--загрузка кастомных шрифтов -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+		<header class="header geometria">
+			<div class="container">
+				<div class="header__blocks">
+					<div class="header__block">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								T–50
+								<span class="logo__link_span">:re</span>
+							</a>
+						</div>
+						<!-- /.logo -->
+					</div>
+					<div class="header__block header__block_wide">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<span class="hamburger__screen-reader-text">Menu</span>
+
+						</button>
+						<div class="menu" id="js-menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Каталог</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Заказы</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Отчеты</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контроль качества</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Информационный портал</a>
+									</li>
+
+								</ul>
+							</nav>
+						</div>
+						<!--end menu-->
+
+					</div>
+					<div class="header__block header__block_authorization">
+						<div class="authorization">
+							<div class="authorization__list">
+								<div class="authorization__item authorization__item_img">
+									<img class="authorization__avatar" src="https://icongr.am/clarity/user.svg" alt="">
+								</div>
+								<div class="authorization__item authorization__item_text">
+									<h4 class="authorization__h4 authorization__h4_name">Алексей Григорьев</h4>
+									<h4 class="authorization__h4 authorization__h4_subname">Тестовый аккаунт</h4>
+								</div>
+								<div class="authorization__item authorization__item_link">
+									<img src="images/calendar.svg" alt="" class="authorization__link">
+									<img src="images/settings.svg" alt="" class="authorization__link">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- WORKAREA -->
+		<div class="middle">
+			<div class="content content_navigation">
+				<a href="T50_catalog_root.html" target="_blank" class="a_navigation">T50:RE/catalog/root</a>
+				<a href="T50_catalog_store.html" target="_blank" class="a_navigation">T50:RE/catalog/store</a>
+				<a href="T50_catalog_item list.html" target="_blank" class="a_navigation">T50:RE/catalog/item list</a>
+				<a href="T50_catalog_model page.html" target="_blank" class="a_navigation">T50:RE/catalog/model page</a>
+				<a href="T50_OKK_1.html" target="_blank" class="a_navigation">T50:RE/OKK/1</a>
+				<a href="T50_OKK_2.html" target="_blank" class="a_navigation">T50:RE/OKK/2</a>
+				<a href="T50_OKK_3.html" target="_blank" class="a_navigation">T50:RE/OKK/3</a>
+				<a href="T50_OKK_5.html" target="_blank" class="a_navigation">T50:RE/OKK/5</a>
+				<a href="T50_OKK_6.html" target="_blank" class="a_navigation">T50:RE/OKK/6</a>
+				<a href="T50_orders_all+summ.html" target="_blank" class="a_navigation">T50:RE/orders/all+summ</a>
+				<a href="" target="_blank" class="a_navigation"></a>
+				<a href="" target="_blank" class="a_navigation"></a>
+				<a href="" target="_blank" class="a_navigation"></a>
+				<a href="" target="_blank" class="a_navigation"></a>
+				<a href="" target="_blank" class="a_navigation"></a>
+				<a href="" target="_blank" class="a_navigation"></a>
+			</div>
+			<!-- END WORKAREA -->
+			<!-- /.content -->
+
+			<!-- /.middle__container -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+</body>
+
+</html>
