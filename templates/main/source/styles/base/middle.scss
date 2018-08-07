@@ -27,6 +27,9 @@
         padding: 10px 15px;
       }
     }
+    &_index_11 {
+      width: 100%;
+    }
   }
   .middle__content {
     width: unset;
@@ -149,6 +152,117 @@
           &_magnifyingglass {
             margin-right: 12px;
             margin-left: 12px;
+          }
+        }
+      }
+      &_index_11 {
+        height: unset;
+        margin-bottom: 15px;
+        .item {
+          &_main {
+            margin-right: 32px;
+            width: 240px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            select {
+              height: 32px;
+            }
+            &-last {
+              width: 160px;
+              margin-right: 0;
+            }
+          }
+          &_date {
+            width: 100%;
+            height: 32px;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+            border: solid 1px #d8e1e8;
+            text-transform: uppercase;
+            font-family: "Exo2-Semi";
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: 0.8px;
+            color: #bfccd6;
+            padding-left: 12px;
+            &::-webkit-calendar-picker-indicator {
+              width: 13px;
+              height: 13px;
+              background: url("https://icongr.am/fontawesome/calendar.svg?color=bfccd6") no-repeat center;
+              background-size: contain;
+              color: transparent;
+              margin-right: 12px;
+            }
+            &::-webkit-clear-button {
+              display: none;
+            }
+            &::-webkit-inner-spin-button {
+              display: none;
+            }
+          }
+          &_name {
+            font-family: 'SourceSansPro';
+            font-size: 10px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            color: #919eab;
+            margin: 4px 0;
+          }
+          &_buttons {
+            width: 208px;
+            position: relative;
+            margin: 0 0 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .button {
+              position: relative;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              height: 40px;
+              font-family: "Exo2-Semi";
+              font-size: 12px;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.25;
+              letter-spacing: 0.8px;
+              color: #ffffff;
+              text-decoration: none;
+              text-transform: uppercase;
+              outline: none;
+              border-radius: 4px;
+              border: solid 1px #394b5985;
+              transition: 0.2s ease-in-out;
+              padding: 12px 12px 13px;
+              opacity: .4;
+              &_save {
+                background-color: #4580e6;
+                .img {
+                  background-image: url("https://icongr.am/clarity/check.svg?color=ffffff");
+                  background-size: contain;
+                  width: 16px;
+                  height: 16px;
+                  margin: 0 0 0 auto;
+                }
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+            label {
+              margin-top: 10px;
+              margin-bottom: 11px;
+            }
           }
         }
       }
@@ -463,6 +577,32 @@
           &__number {
             margin-right: 19px;
           }
+        }
+      }
+    }
+    &__link-index_11 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -8px;
+      margin-bottom: 16px;
+      .link-buttons {
+        padding: 5px 8px 7px 9px;
+        border-radius: 3px;
+        border: solid 1px #dcdee0;
+        font-family: "Exo2-Semi";
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #bfccd6;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        &:hover {
+          color: #8a9ba8;
+          border: solid 1px #b3b5cb;
         }
       }
     }
@@ -1525,6 +1665,39 @@
         .active {
           .span__manager_link {
             display: flex;
+          }
+        }
+      } // Index_11.html
+      &_index_11 {
+        .middle__brands_table {
+          &_title {
+            .span {
+              font-family: "Exo2-Semi";
+              font-size: 12px;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.17;
+              letter-spacing: normal;
+              color: #bfccd6;
+              width:50px;
+              margin-left: 8px;
+            }
+            
+          }
+          &_block {
+            .span {
+              font-family: "SourceSansPro";
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              color: #293742;
+              width:50px;
+              margin-left: 8px;
+            }
           }
         }
       }

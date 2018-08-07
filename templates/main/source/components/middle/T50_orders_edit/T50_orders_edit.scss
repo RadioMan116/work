@@ -60,7 +60,8 @@
 					}
 				}
 				&-telefon {
-					width: 272px;
+					max-width: 272px;
+					width: 100%;
 					display: flex;
 					flex-wrap: wrap;
 					.item_name {
@@ -72,6 +73,7 @@
 					}
 					.item_form {
 						height: 32px;
+						width: 100%;
 					}
 				}
 				&-delivery {
@@ -236,6 +238,7 @@
 				}
 			}
 			form {
+				max-width:100% ;
 				.item_textarea {
 					width: 100%;
 					resize: none;
@@ -415,7 +418,7 @@
 				}
 				&_footer {
 					border-top: 1px solid #394b59;
-					span{
+					span {
 						font-family: "SourceSansPro";
 						font-size: 14px;
 						font-weight: bold;
@@ -490,40 +493,11 @@
 			align-items: center;
 			label {
 				margin: 0;
-			}
-			.checkbox {
-				position: relative;
-				display: inline-block;
-				padding: 0 0 0 30px;
-				line-height: 1;
-				cursor: pointer;
-				color: rgb(51, 51, 51);
-				font-size: 14px;
-				font-weight: 400;
-				line-height: 22px;
-				&__input {
-					visibility: hidden;
-					position: absolute;
-					left: 0;
-					top: 0;
-				}
-				&__icon {
-					position: absolute;
-					left: 0;
-					top: 2px;
-					width: 16px;
-					height: 16px;
-					border-radius: 3px;
-					border: 1px solid rgb(220, 220, 220);
-					background-color: rgb(255, 255, 255);
-				}
-				&__input:checked~&__icon {
-					background-color: rgb(0, 83, 167);
-					border: 1px solid rgb(0, 83, 167);
-				}
 				&:first-child {
 					margin-left: 24px;
-					margin-right: 33px;
+				}
+				&:last-child {
+					margin-left: 33px;
 				}
 			}
 		}

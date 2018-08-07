@@ -1,0 +1,134 @@
+ {% include 'head/head.html' %}
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+		{% include 'header/global/header.html' %}
+		<!-- WORKAREA -->
+		<div class="middle">
+			{% include 'middle/editing_task/task.html' %}
+			<div class="content content_index_11">
+				<div class="middle__title middle__title_index_11">
+					<h2 class="middle__title_h2">Отчет по
+						<a href="" class="middle__title_h2_a">выручке</a>
+					</h2>
+				</div>
+				<div class="middle__title__select middle__title__select_index_11">
+					<div class="item_main">
+						<span class="item_name">Дата заказа</span>
+						<input class="item item_date item_date_last" type="date"></input>
+					</div>
+					<div class="item_main">
+						<span class="item_name">Дата доставки</span>
+						<input class="item item_date item_date_last" type="date"></input>
+					</div>
+					<div class="item_main">
+						<span class="item_name">Статус</span>
+						<select class="middle__title__select_category">
+							<option value="">Категория</option>
+							<option class="middle__title__select_option">{{ item }}</option>
+						</select>
+					</div>
+					<div class="item_main item_main-last">
+						<span class="item_name ">Регион</span>
+						<select class="middle__title__select_category">
+							<option value="">Категория</option>
+							<option class="middle__title__select_option">{{ item }}</option>
+						</select>
+					</div>
+					<div class="item_buttons">
+						<label class="checkbox search__checkbox">
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Скачать файл отчета</span>
+						</label>
+						<a href=" # " class="button button_save">
+							Сформировать
+							<span class="img"></span>
+						</a>
+					</div>
+				</div>
+				<div class="middle__title__link-index_11">
+					<a href="#" class="link-buttons">Все заказы</a>
+					<a href="#" class="link-buttons">Неофицальные заказы</a>
+					<a href="#" class="link-buttons">Офицальные заказы</a>
+					<a href="#" class="link-buttons">Все заказы менеджеры РЭТ</a>
+					<a href="#" class="link-buttons">Все заказы менеджеры HD</a>
+					<a href="#" class="link-buttons">Неофициальные заказы менеджеры РЭТ</a>
+					<a href="#" class="link-buttons">Неофициальные заказы менеджеры HD</a>
+					<a href="#" class="link-buttons">Офицальные заказы менеджеры РЭТ</a>
+					<a href="#" class="link-buttons">Офицальные заказы менеджеры HD</a>
+				</div>
+				<div class="middle__brands middle__brands_index_11">
+					<div class="middle__brands_table middle__brands_table_index_11">
+						<div class="middle__brands_table_title middle__brands_table_title__index_11">
+							<span class="span span__score">Магазин</span>
+							<span class="span span__order">Заказ</span>							
+							<span class="span span__number">Заказ</span>
+							<span class="span span__date">Заказ</span>
+							<span class="span span__numeric">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+							<span class="span span__block">Заказ</span>
+						</div>
+						<div class="middle__brands_table_block middle__brands_table_block__index_11">
+								<span class="span span__score">Магазин</span>
+								<span class="span span__order">Заказ</span>							
+								<span class="span span__number">Заказ</span>
+								<span class="span span__date">Заказ</span>
+								<span class="span span__numeric">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">Заказ</span>
+								<span class="span span__block">sel</span>
+								<span class="span span__block">asr</span>
+								<span class="span span__block">нтк</span>
+								<span class="span span__block">hdw</span>
+								<span class="span span__block">днк</span>
+								<span class="span span__block">вхд</span>
+								<span class="span span__block">fhs</span>
+								<span class="span span__block">пбт</span>
+								<span class="span span__block">ктг</span>
+								<span class="span span__block">всл</span>
+								<span class="span span__block">цвт</span>
+								<span class="span span__block">мгл</span>
+								<span class="span span__block">ТХП</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END WORKAREA -->
+			<!-- /.content -->
+
+			<!-- /.middle__container -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/script.min.js"></script>
+</body>
+
+</html>
