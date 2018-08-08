@@ -8,30 +8,30 @@
 		<div class="middle">
 			<div class="content">
 				<div class="middle__title">
-					<h2 class="middle__title_h2">Поиск по каталогу
-						<a href="" class="middle__title_h2_a">Hausdorf</a>
-						<img src="{{src}}external_blue.svg" alt="" class="middle__title_h2_img">
+					<h2 class="middle__title__h2">Поиск по каталогу
+						<a href="" class="middle__title__h2__a">Hausdorf</a>
+						<img src="{{src}}external_blue.svg" alt="" class="middle__title__h2__img">
 					</h2>
 					<div class="middle__title__select">
-						<select class="middle__title__select_score" required>
+						<select class="select select-score" required>
 							<option value="">Магазин</option>
 							<optgroup label="монобренды"></optgroup>
 							{% for item in data.menu.monobrands %}
-							<option class="middle__title__select_option">{{ item }}</option>
+							<option class="option ">{{ item }}</option>
 							{% endfor %}
 							<optgroup label="мультибренд"></optgroup>
 							{% for item in data.menu.multibrand %}
-							<option class="middle__title__select_option">{{ item }}</option>
+							<option class="option ">{{ item }}</option>
 							{% endfor %}
 						</select>
-						<select class="middle__title__select_category">
+						<select class="select select-category">
 							<option value="">Категория</option>
 							{% for item in data.menu.item %}
-							<option class="middle__title__select_option">{{ item }}</option>
+							<option class="option ">{{ item }}</option>
 							{% endfor %}
 						</select>
-						<form>
-							<input type="text" placeholder="Поиск модели…">
+						<form class="form">
+							<input class='input' type="text" placeholder="Поиск модели…">
 							<img src="{{src}}settings.svg" alt="" class="button button_settings">
 							<img src="{{src}}magnifyingglass.svg" alt="" class="button button_magnifyingglass">
 						</form>
@@ -53,9 +53,9 @@
 								<a href=" # " class="model_page_button ">Добавить
 									<span class="description_button"></span>
 								</a>
-								<select class="middle__title__select city_select ">
+								<select class="middle__title__select select select-city ">
 									<option value=" ">город</option>
-									<option class="middle__title__select_option ">Москва</option>
+									<option class="option  ">Москва</option>
 								</select>
 							</div>
 						</div>
@@ -288,10 +288,10 @@
 						</span>
 					</div>
 					<div class="middle__news__blocks ">
-						<div class="middle__news__block_date ">
-							<h6 class="middle__news__block_date_h6 ">22.11.17</h6>
-							<h5 class="middle__news__block_date_h5 ">Hausdorf</h5>
-							<img src="{{src}}warning.svg " alt=" " class="middle__news__block_date_img ">
+						<div class="middle__news__block-date ">
+							<h6 class="middle__news__block-date__h6 ">22.11.17</h6>
+							<h5 class="middle__news__block-date__h5 ">Hausdorf</h5>
+							<img src="{{src}}warning.svg " alt=" " class="middle__news__block-date__img ">
 						</div>
 						<h5 class="middle__news__block_h5 ">Бесплатное подключение делать нельзя!</h5>
 						<h6 class="middle__news__block_h6 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
@@ -317,10 +317,10 @@
 						<div class="middle__news__block_border "></div>
 					</div>
 					<div class="middle__news__blocks ">
-						<div class="middle__news__block_date ">
-							<h6 class="middle__news__block_date_h6 ">22.11.17</h6>
-							<h5 class="middle__news__block_date_h5 ">Hausdorf</h5>
-							<img src="{{src}}warning.svg " alt=" " class="middle__news__block_date_img ">
+						<div class="middle__news__block-date ">
+							<h6 class="middle__news__block-date__h6 ">22.11.17</h6>
+							<h5 class="middle__news__block-date__h5 ">Hausdorf</h5>
+							<img src="{{src}}warning.svg " alt=" " class="middle__news__block-date__img ">
 						</div>
 						<h5 class="middle__news__block_h5 ">Бесплатное подключение делать нельзя!</h5>
 						<h6 class="middle__news__block_h6 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону

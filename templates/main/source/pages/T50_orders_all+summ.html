@@ -9,7 +9,7 @@
 				{% include 'middle/T50_orders_edit/T50_orders_edit.html' %}
 			<div class="content middle__content">
 				<div class="middle__title_index_10">
-					<h2 class="middle__title_h2">
+					<h2 class="middle__title__h2">
 						Фильтр заказов
 					</h2>
 					<div class="middle__title__select">
@@ -18,34 +18,34 @@
 						</form>
 						<input class="item item_date" value="Дата заказа" type="date"></input>
 						<input class="item item_date" value="Дата отгрузки" type="date"></input>
-						<select class="middle__title__select_score item" required>
+						<select class="select select-score item" required>
 							<option value="">Все менеджеры</option>
 						</select>
-						<select class="middle__title__select_score item" required>
+						<select class="select select-score item" required>
 							<option value="">Все магазины</option>
 						</select>
-						<select class="middle__title__select_score item" required>
+						<select class="select select-score item" required>
 							<option value="">Любой источник</option>
 						</select>
-						<select class="middle__title__select_score item" required>
+						<select class="select select-score item" required>
 							<option value="">Все менеджеры</option>
 						</select>
-						<select class="middle__title__select_score item" required>
+						<select class="select select-score item" required>
 							<option value="">Способ оплаты</option>
 						</select>
 						<input class="item item_date item_date_last" value="Дата отгрузки" type="date"></input>
 					</div>
-					<div class="middle__title__pagination">
-						<select class="middle__title__pagination_select">
+					<div class="pagination__items">
+						<select class="pagination__items__select">
 							<option value="">город</option>
-							<option class="middle__title__select_option">Москва</option>
+							<option class="option ">Москва</option>
 						</select>
-						<h4 class="middle__title__pagination_h4">Найдено
-							<span class="middle__title__pagination_h4_span">
+						<h4 class="pagination__items__h4">Найдено
+							<span class="pagination__items__h4__span">
 								1084
 							</span>
 							моделей(
-							<span class="middle__title__pagination_h4_span">50 </span> &nbsp на странице)
+							<span class="pagination__items__h4__span">50 </span> &nbsp на странице)
 						</h4>
 						{% include 'pagination/pagination.html' %}
 					</div>

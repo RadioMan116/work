@@ -3,33 +3,31 @@
 <body>
 
 	<div class="wrapper" id="js-wrapper">
-
 		{% include 'header/global/header.html' %}
-
 		<div class="middle">
 			<div class="content">
 				<div class="middle__title">
-					<h2 class="middle__title_h2">Поиск по каталогу T–50</h2>
+					<h2 class="middle__title__h2">Поиск по каталогу T–50</h2>
 					<div class="middle__title__select">
-						<select class="middle__title__select_score" required>
+						<select class="select select-score" required>
 							<option value="">Магазин</option>
 							<optgroup label="монобренды"></optgroup>
 							{% for item in data.menu.monobrands %}
-							<option class="middle__title__select_option">{{ item }}</option>
+							<option class="option ">{{ item }}</option>
 							{% endfor %}
 							<optgroup label="мультибренд"></optgroup>
 							{% for item in data.menu.multibrand %}
-							<option class="middle__title__select_option">{{ item }}</option>
+							<option class="option ">{{ item }}</option>
 							{% endfor %}
 						</select>
-						<select class="middle__title__select_category">
+						<select class="select select-category">
 							<option value="">Категория</option>
 							<option>Apples</option>
 							<option>Chocklate</option>
 							<option>Pancakes</option>
 						</select>
-						<form>
-							<input type="text" placeholder="Поиск модели…">
+						<form class="form">
+							<input class='input' type="text" placeholder="Поиск модели…">
 							<img src="{{src}}settings.svg" alt="" class="button button_settings">
 							<img src="{{src}}magnifyingglass.svg" alt="" class="button button_magnifyingglass">
 						</form>
@@ -37,73 +35,71 @@
 				</div>
 				<div class="middle__brands">
 					<h3 class="middle__brands__h3">монобренды</h3>
-					<div class="middle__brands_monobrands">
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Aeg</a>
-							<a href="#" class="middle__brands_link">Asko</a>
-							<a href="#" class="middle__brands_link">Asko2</a>
-							<a href="#" class="middle__brands_link">Beko</a>
-							<a href="#" class="middle__brands_link">Blanco</a>
-							<a href="#" class="middle__brands_link">Blanco2</a>
-							<a href="#" class="middle__brands_link">Bosch</a>
-							<a href="#" class="middle__brands_link">Candy</a>
-							<a href="#" class="middle__brands_link">DeDietrich</a>
-							<a href="#" class="middle__brands_link">DeLonghi</a>
-							<a href="#" class="middle__brands_link">DeWALT</a>
-							<a href="#" class="middle__brands_link">Electrolux</a>
+					<div class="middle__brands__items">
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Aeg</a>
+							<a href="#" class="middle__brands__link">Asko</a>
+							<a href="#" class="middle__brands__link">Asko2</a>
+							<a href="#" class="middle__brands__link">Beko</a>
+							<a href="#" class="middle__brands__link">Blanco</a>
+							<a href="#" class="middle__brands__link">Blanco2</a>
+							<a href="#" class="middle__brands__link">Bosch</a>
+							<a href="#" class="middle__brands__link">Candy</a>
+							<a href="#" class="middle__brands__link">DeDietrich</a>
+							<a href="#" class="middle__brands__link">DeLonghi</a>
+							<a href="#" class="middle__brands__link">DeWALT</a>
+							<a href="#" class="middle__brands__link">Electrolux</a>
 						</div>
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Faber</a>
-							<a href="#" class="middle__brands_link">Falmec</a>
-							<a href="#" class="middle__brands_link">Franke</a>
-							<a href="#" class="middle__brands_link">Gorenje</a>
-							<a href="#" class="middle__brands_link">Gorenje-store</a>
-							<a href="#" class="middle__brands_link">Graude</a>
-							<a href="#" class="middle__brands_link">Grohe</a>
-							<a href="#" class="middle__brands_link">Hansa</a>
-							<a href="#" class="middle__brands_link">Hitachi</a>
-							<a href="#" class="middle__brands_link">InSinkErator</a>
-							<a href="#" class="middle__brands_link">Kaiser</a>
-							<a href="#" class="middle__brands_link">Karcher</a>
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Faber</a>
+							<a href="#" class="middle__brands__link">Falmec</a>
+							<a href="#" class="middle__brands__link">Franke</a>
+							<a href="#" class="middle__brands__link">Gorenje</a>
+							<a href="#" class="middle__brands__link">Gorenje-store</a>
+							<a href="#" class="middle__brands__link">Graude</a>
+							<a href="#" class="middle__brands__link">Grohe</a>
+							<a href="#" class="middle__brands__link">Hansa</a>
+							<a href="#" class="middle__brands__link">Hitachi</a>
+							<a href="#" class="middle__brands__link">InSinkErator</a>
+							<a href="#" class="middle__brands__link">Kaiser</a>
+							<a href="#" class="middle__brands__link">Karcher</a>
 						</div>
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Kuppersberg</a>
-							<a href="#" class="middle__brands_link">Kuppersberg2</a>
-							<a href="#" class="middle__brands_link">Kuppersbusch</a>
-							<a href="#" class="middle__brands_link">Liebherr</a>
-							<a href="#" class="middle__brands_link">Liebherr2</a>
-							<a href="#" class="middle__brands_link">Makita</a>
-							<a href="#" class="middle__brands_link">Miele</a>
-							<a href="#" class="middle__brands_link">Mitsubishi</a>
-							<a href="#" class="middle__brands_link">Neff</a>
-							<a href="#" class="middle__brands_link">nf-store</a>
-							<a href="#" class="middle__brands_link">Nolte</a>
-							<a href="#" class="middle__brands_link">Omoikiri</a>
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Kuppersberg</a>
+							<a href="#" class="middle__brands__link">Kuppersberg2</a>
+							<a href="#" class="middle__brands__link">Kuppersbusch</a>
+							<a href="#" class="middle__brands__link">Liebherr</a>
+							<a href="#" class="middle__brands__link">Liebherr2</a>
+							<a href="#" class="middle__brands__link">Makita</a>
+							<a href="#" class="middle__brands__link">Miele</a>
+							<a href="#" class="middle__brands__link">Mitsubishi</a>
+							<a href="#" class="middle__brands__link">Neff</a>
+							<a href="#" class="middle__brands__link">nf-store</a>
+							<a href="#" class="middle__brands__link">Nolte</a>
+							<a href="#" class="middle__brands__link">Omoikiri</a>
 						</div>
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Redverg</a>
-							<a href="#" class="middle__brands_link">Rosenlew</a>
-							<a href="#" class="middle__brands_link">Samsung</a>
-							<a href="#" class="middle__brands_link">Schock</a>
-							<a href="#" class="middle__brands_link">Siemens</a>
-							<a href="#" class="middle__brands_link">Smeg</a>
-							<a href="#" class="middle__brands_link">Smeg2</a>
-							<a href="#" class="middle__brands_link">Techno-pride</a>
-							<a href="#" class="middle__brands_link">Teka</a>
-							<a href="#" class="middle__brands_link">Weissgauff</a>
-							<a href="#" class="middle__brands_link">Whirlpool</a>
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Redverg</a>
+							<a href="#" class="middle__brands__link">Rosenlew</a>
+							<a href="#" class="middle__brands__link">Samsung</a>
+							<a href="#" class="middle__brands__link">Schock</a>
+							<a href="#" class="middle__brands__link">Siemens</a>
+							<a href="#" class="middle__brands__link">Smeg</a>
+							<a href="#" class="middle__brands__link">Smeg2</a>
+							<a href="#" class="middle__brands__link">Techno-pride</a>
+							<a href="#" class="middle__brands__link">Teka</a>
+							<a href="#" class="middle__brands__link">Weissgauff</a>
+							<a href="#" class="middle__brands__link">Whirlpool</a>
 						</div>
 					</div>
 					<h3 class="middle__brands__h3">мультибренд</h3>
-					<div class="middle__brands_multibrand">
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Hausdorf</a>
+					<div class="middle__brands__items">
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Hausdorf</a>
 						</div>
-						<div class="middle__brands_list">
-							<a href="#" class="middle__brands_link">Techno-pride</a>
+						<div class="middle__brands__list">
+							<a href="#" class="middle__brands__link">Techno-pride</a>
 						</div>
-
-
 					</div>
 				</div>
 			</div>
@@ -116,10 +112,10 @@
 						</span>
 					</div>
 					<div class="middle__news__blocks">
-						<div class="middle__news__block_date">
-							<h6 class="middle__news__block_date_h6">22.11.17</h6>
-							<h5 class="middle__news__block_date_h5">Aeg</h5>
-							<img src="{{src}}warning.svg" alt="" class="middle__news__block_date_img">
+						<div class="middle__news__block-date">
+							<h6 class="middle__news__block-date__h6">22.11.17</h6>
+							<h5 class="middle__news__block-date__h5">Aeg</h5>
+							<img src="{{src}}warning.svg" alt="" class="middle__news__block-date__img">
 						</div>
 						<h5 class="middle__news__block_h5">Бесплатное подключение делать нельзя!</h5>
 						<h6 class="middle__news__block_h6">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
@@ -145,10 +141,10 @@
 						<div class="middle__news__block_border"></div>
 					</div>
 					<div class="middle__news__blocks">
-						<div class="middle__news__block_date">
-							<h6 class="middle__news__block_date_h6">22.11.17</h6>
-							<h5 class="middle__news__block_date_h5">Aeg</h5>
-							<img src="{{src}}warning.svg" alt="" class="middle__news__block_date_img">
+						<div class="middle__news__block-date">
+							<h6 class="middle__news__block-date__h6">22.11.17</h6>
+							<h5 class="middle__news__block-date__h5">Aeg</h5>
+							<img src="{{src}}warning.svg" alt="" class="middle__news__block-date__img">
 						</div>
 						<h5 class="middle__news__block_h5">Бесплатное подключение делать нельзя!</h5>
 						<h6 class="middle__news__block_h6">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
@@ -178,7 +174,6 @@
 			<!-- /.middle__container -->
 		</div>
 		<!-- /.middle -->
-
 	</div>
 	<!-- /.wrapper -->
 </body>

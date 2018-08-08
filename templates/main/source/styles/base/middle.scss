@@ -35,7 +35,7 @@
     width: unset;
   }
   &__title {
-    &_h2 {
+    &__h2 {
       display: flex;
       align-items: center;
       font-family: "Exo2-Regular";
@@ -48,7 +48,7 @@
       color: #293742;
       margin-top: 24px;
       margin-bottom: 12px; // index_2.html
-      &_a {
+      &__a {
         font-family: "Exo2-Semi";
         font-size: 24px;
         font-weight: 600;
@@ -60,101 +60,98 @@
         margin-left: 8px;
         margin-right: 4px;
       }
-      &_img {
+      &__img {
         width: 24px;
         height: 24px;
+      }
+    }
+    .select {
+      border-radius: 4px;
+      box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+      background-color: #ffffff;
+      border: solid 1px #d8e1e8;
+      padding-left: 5px;
+      font-family: "Exo2-Semi";
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.8px;
+      color: #bfccd6;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
+      .option {
+        font-family: "Exo2-Semi";
+        color: #394b59;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.8px;
+        color: #394b59;
+      }
+      &-score {
+        width: 100%;
+        max-width: 115px;
+      }
+      &-category {
+        width: 100%;
+        max-width: 224px;
+      }
+      &-city {
+        width: 100%;
+        max-width: 160px;
+      }
+    }
+    .form {
+      position: relative;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
+      background-color: #ffffff;
+      border: solid 1px #d8e1e8;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      input,
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+      .input {
+        padding-left: 5px;
+        font-family: "SourceSansPro";
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #bfccd6;
+        opacity: 0.6;
+      }
+      .button {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        cursor: pointer;
+        &_settings {
+          margin: 0 0 0 auto;
+        }
+        &_magnifyingglass {
+          margin-right: 12px;
+          margin-left: 12px;
+        }
       }
     }
     &__select {
       display: flex;
       height: 40px;
-      &_score {
-        width: 100%;
-        max-width: 115px;
-      }
-      &_category {
-        width: 100%;
-        max-width: 224px;
-      }
-      select {
-        border-radius: 4px;
-        box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-        background-color: #ffffff;
-        border: solid 1px #d8e1e8;
-        padding-left: 5px;
-        font-family: "Exo2-Semi";
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: 0.8px;
-        color: #bfccd6;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
-      }
-      &_option {
-        font-family: "Exo2-Semi";
-        color: #394b59;
-        font-size: 12px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: 0.8px;
-        color: #394b59;
-      }
-      /*target Internet Explorer 9 and Internet Explorer 10:*/
-      @media screen and (min-width: 0\0) {
-        select {
-          background: none;
-          padding: 5px;
-        }
-      }
-      form {
-        position: relative;
-        border-radius: 4px;
-        box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-        background-color: #ffffff;
-        border: solid 1px #d8e1e8;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        input,
-        button {
-          border: none;
-          outline: none;
-          background: transparent;
-        }
-        input {
-          padding-left: 5px;
-          font-family: "SourceSansPro";
-          font-size: 14px;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.14;
-          letter-spacing: normal;
-          color: #bfccd6;
-          opacity: 0.6;
-        }
-        .button {
-          width: 16px;
-          height: 16px;
-          object-fit: contain;
-          cursor: pointer;
-          &_settings {
-            margin: 0 0 0 auto;
-          }
-          &_magnifyingglass {
-            margin-right: 12px;
-            margin-left: 12px;
-          }
-        }
-      }
       &_index_11 {
         height: unset;
         margin-bottom: 15px;
@@ -266,40 +263,12 @@
         }
       }
     }
-    .city_select {
-      width: 100%;
-      max-width: 160px;
-      border-radius: 4px;
-      color: #394b59;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url("../images/chevron-down.svg") 96% / 16px no-repeat #f5f8fa !important;
-      border-radius: 4px;
-      box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-      background-color: #ffffff;
-      border: solid 1px #d8e1e8;
-      padding-left: 5px;
-      font-family: "Exo2-Semi";
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.33;
-      letter-spacing: 0.8px;
-      color: #bfccd6;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
-    }
-    &__pagination {
+    .pagination__items {
       display: flex;
       margin-top: 24px;
       margin-bottom: 16px;
       justify-content: space-between;
-      &_select {
+      &__select {
         width: 100%;
         max-width: 160px;
         border-radius: 4px;
@@ -309,7 +278,7 @@
         appearance: none;
         background: url("../images/chevron-down.svg") 96% / 16px no-repeat #f5f8fa !important;
       }
-      &_h4 {
+      &__h4 {
         font-family: "SourceSansPro";
         font-size: 16px;
         font-weight: 300;
@@ -321,31 +290,16 @@
         color: #394b59;
         margin-bottom: 0;
         margin-left: 5%;
-        &_span {
+        &__span {
           font-weight: 600;
           color: #293742;
         }
       }
-    }
-    select {
-      border-radius: 4px;
-      box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-      border: solid 1px #d8e1e8;
-      padding-left: 5px;
-      font-family: "Exo2-Semi";
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.33;
-      letter-spacing: 0.8px;
-      color: #bfccd6;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
-    } // Index_4.html
+    } 
+    
+    
+    
+    // Index_4.html
     &__model_page {
       display: flex;
       margin-top: 24px;
@@ -616,17 +570,12 @@
     }
   }
   &__brands {
-    &_monobrands {
+    &__items {
       display: flex;
       flex-wrap: wrap;
       padding-left: 16px;
     }
-    &_multibrand {
-      display: flex;
-      padding-left: 16px;
-      margin-bottom: 12%;
-    }
-    &_list {
+    &__list {
       width: 18%;
       display: flex;
       flex-wrap: wrap;
@@ -649,7 +598,7 @@
       margin-bottom: 16px;
       width: 100%;
     }
-    &_link {
+    &__link {
       width: 100%;
       font-family: "Exo2-Regular";
       font-size: 16px;
@@ -1859,15 +1808,15 @@
                 overflow: hidden;
                 white-space: nowrap;
                 padding-right: 16px;
-                &_info{
+                &_info {
                   display: none;
-                  &:first-child{
+                  &:first-child {
                     display: block;
                   }
-                   &-green{
+                  &-green {
                     color: #15b371;
-                   }
-                }   
+                  }
+                }
               }
               &__numeric {
                 width: 84px;
@@ -1890,28 +1839,26 @@
             }
           }
         }
-        .active{
-         height: unset;
-         min-height: 48px;
-         align-items: flex-start;
-         padding-top: 14px;
-         padding-bottom: 13px;
-         .span {
-        
-          &__date {
-            width: 532px;
-            overflow: inherit;
-            white-space:normal;
-            display: flex;
-            flex-wrap: wrap;
-            height: unset;
-            
-            &_info {
-              width: 100%;
-              display: block;
+        .active {
+          height: unset;
+          min-height: 48px;
+          align-items: flex-start;
+          padding-top: 14px;
+          padding-bottom: 13px;
+          .span {
+            &__date {
+              width: 532px;
+              overflow: inherit;
+              white-space: normal;
+              display: flex;
+              flex-wrap: wrap;
+              height: unset;
+              &_info {
+                width: 100%;
+                display: block;
+              }
             }
           }
-        }
         }
       }
     }
@@ -2145,9 +2092,9 @@
       }
     }
     &__block {
-      &_date {
+      &-date {
         display: flex;
-        &_h6 {
+        &__h6 {
           font-family: "Exo2-Regular";
           font-size: 12px;
           font-weight: normal;
@@ -2158,7 +2105,7 @@
           color: #bfccd6;
           margin: 0;
         }
-        &_h5 {
+        &__h5 {
           font-family: "Exo2-Semi";
           font-size: 12px;
           font-weight: 600;
@@ -2170,7 +2117,7 @@
           text-transform: uppercase;
           margin: 0 8px 0 8px;
         }
-        &_img {
+        &__img {
           width: 13px;
           height: 13px;
           object-fit: contain;
@@ -2392,7 +2339,7 @@
       }
     }
   }
-  &_okk_4{
+  &_okk_4 {
     .editing_task {
       display: flex;
     }
