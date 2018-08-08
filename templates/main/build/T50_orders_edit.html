@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style>
+		@font-face {
+						font-family: "Geometria";
+						src: url('css/fonts/Geometria/Geometria.woff2') format('woff2'),
+						url('css/fonts/Geometria/Geometria.woff') format('woff'),
+						url('css/fonts/Geometria/Geometria.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+						font-display: optional;
+				}
+
+				.font-marketsans .geometria {
+						font-family: "Geometria", "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif
+				}
+	</style>
+	<!--загрузка кастомных шрифтов -->
+
+	<script>
+		var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
+		  (localStorage && localStorage.getItem('ebay-font'));
+		if (useCustomFont) {
+			document.documentElement.classList.add('font-marketsans');
+		}
+	</script>
+	<!--загрузка кастомных шрифтов -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+		<header class="header geometria">
+			<div class="container">
+				<div class="header__blocks">
+					<div class="header__block">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								T–50
+								<span class="logo__link_span">:re</span>
+							</a>
+						</div>
+						<!-- /.logo -->
+					</div>
+					<div class="header__block header__block_wide">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<span class="hamburger__screen-reader-text">Menu</span>
+
+						</button>
+						<div class="menu" id="js-menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Каталог</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Заказы</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Отчеты</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контроль качества</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Информационный портал</a>
+									</li>
+
+								</ul>
+							</nav>
+						</div>
+						<!--end menu-->
+
+					</div>
+					<div class="header__block header__block_authorization">
+						<div class="authorization">
+							<div class="authorization__list">
+								<div class="authorization__item authorization__item_img">
+									<img class="authorization__avatar" src="https://icongr.am/clarity/user.svg" alt="">
+								</div>
+								<div class="authorization__item authorization__item_text">
+									<h4 class="authorization__h4 authorization__h4_name">Алексей Григорьев</h4>
+									<h4 class="authorization__h4 authorization__h4_subname">Тестовый аккаунт</h4>
+								</div>
+								<div class="authorization__item authorization__item_link">
+									<img src="images/calendar.svg" alt="" class="authorization__link">
+									<img src="images/settings.svg" alt="" class="authorization__link">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- WORKAREA -->
+		<div class="middle middle_okk_4">
+			<div class="orders_edit">
+				<div class="container">
+					<div class="orders_edit_title">
+						<span class="span span_text">Редактирование заказа</span>
+						<span class="span span_close js_span_close"></span>
+					</div>
+					<div class="orders_edit_items">
+						<div class="item item_first">
+							<div class="item_main">
+								<span class="item_name">№ заказа</span>
+								<select class="item_select item_select_order">
+									<option value="">Категория</option>
+									<option class="item_select_option">604919</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Менеджер</span>
+								<select class="item_select item_select_manager">
+									<option value="">Категория</option>
+									<option class="item_select_option">Овчинников Д.</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Статус</span>
+								<select class="item_select item_select_status">
+									<option value="">Категория</option>
+									<option class="item_select_option">В обработке</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Источник</span>
+								<select class="item_select item_select_origin">
+									<option value="">Категория</option>
+									<option class="item_select_option">Звонок</option>
+								</select>
+							</div>
+							<div class="item_main">
+								<span class="item_name">Регион</span>
+								<select class="item_select item_select_region">
+									<option value="">Категория</option>
+									<option class="item_select_option">В обработке</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="item item_second">
+							<div class="item_main">
+								<span class="item_name">Клиент</span>
+								<form class="item_form item_form-client">
+									<input class="item_form_input" type="text" placeholder="Тарасова Юлия Сергеевна">
+								</form>
+							</div>
+							<div class="item_main">
+								<span class="item_name">электронная почта</span>
+								<form class="item_form item_form-email">
+									<input class="item_form_input" type="text" placeholder="client@gmail.com">
+								</form>
+							</div>
+
+						</div>
+						<div class="item item_third">
+							<div class="item_main item_main-telefon">
+								<span class="item_name">Телефон</span>
+								<form class="item_form item_form">
+									<input class="item_form_input" type="text" placeholder="+7 800 800-00-00">
+								</form>
+								<span class="item_name item_name-two">Телефон доп</span>
+								<form class="item_form item_form">
+									<input class="item_form_input" type="text" placeholder="+7 800 800-00-00">
+								</form>
+							</div>
+							<div class="item_main item_main-delivery">
+								<span class="item_name">Адрес доставки</span>
+								<form class="item_form item_delivery">
+									<input class="item_form_input item_form_input_city" type="text" placeholder="Город">
+									<input class="item_form_input item_form_input_station" type="text" placeholder="Станция метро">
+									<input class="item_form_input item_form_input_street" type="text" placeholder="Улица">
+									<input class="item_form_input item_form_input_house" type="text" placeholder="Дом">
+									<input class="item_form_input item_form_input_entrance" type="text" placeholder="Подъезд">
+									<input class="item_form_input item_form_input_floor" type="text" placeholder="Этаж">
+									<input class="item_form_input item_form_input_information" type="text" placeholder="Дополнительная информация">
+								</form>
+							</div>
+						</div>
+						<div class="item item_four">
+							<div class="item_four-item">
+								<span class="item_name">Магазин</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">ASKO</option>
+								</select>
+								<span class="item_name">Способ оплаты</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">Безналичный</option>
+								</select>
+								<span class="item_name">Дата заказа</span>
+								<input class="item item_date item_date_last" type="date"></input>
+								<span class="item_name">Доверенность для ТК</span>
+								<label for="file-upload" class="item item_date item_file">
+									Загрузить
+									<input id="file-upload" accept="image/jpeg" class="item item_date item_file" type="file" />
+								</label>
+							</div>
+							<div class="item_four-item">
+								<span class="item_name">Поставщик</span>
+								<select class="item_select">
+									<option value="">Категория</option>
+									<option class="item_select_option">ТЕХПОРТ</option>
+								</select>
+								<span class="item_name">Счет поставщика</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="0000000">
+								</form>
+								<span class="item_name">Дата доставки</span>
+								<input class="item item_date item_date_last" value="Дата отгрузки" type="date"></input>
+								<span class="item_name">Документ от поставщика</span>
+								<label for="file-upload" class="item item_date item_file">
+									Загрузить
+									<input id="file-upload" accept="image/jpeg" class="item item_date item_file" type="file" />
+								</label>
+							</div>
+							<div class="item_four-item">
+								<span class="item_name">№ заказа поставщика</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="су000587">
+								</form>
+								<span class="item_name">Счет РЕТ</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input" type="text" placeholder="0000000">
+								</form>
+								<span class="item_name">Интервал</span>
+								<form class="item_form item_form-provider">
+									<input class="item_form_input item_time" type="text" placeholder="08:00 – 18:00">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="orders_edit_table">
+						<div class="middle__brands_table_nav">
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Состав заказа
+								<span class="middle__brands_table_nav_h3_span">2</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Доставка
+								<span class="middle__brands_table_nav_h3_span">5</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Подключение
+								<span class="middle__brands_table_nav_h3_span">0</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Рекламации
+								<span class="middle__brands_table_nav_h3_span">0</span>
+							</h3>
+							<h3 class="middle__brands_table_nav_h3 js_middle__brands_table_nav_h3">Комментарий
+							</h3>
+						</div>
+						<div class="orders_edit_table_items">
+							<div class="item item_title">
+								<span class="item_title_span model">Модель</span>
+								<span class="item_title_span price">На сайте</span>
+								<span class="item_title_span quantity">Продажи</span>
+								<span class="item_title_span action">Закупки</span>
+								<span class="item_title_span information">Кол-во</span>
+								<span class="item_title_span commission">Комиссия</span>
+							</div>
+							<div class="item item_block">
+								<span class="item_block_span model">Кофе-машина DeLonghi ECAM 22.360.S</span>
+								<span class="item_block_span price">59 990 ₽</span>
+								<span class="item_block_span quantity">56 990 ₽</span>
+								<span class="item_block_span action">34 700 ₽</span>
+								<span class="item_block_span information">1</span>
+								<span class="item_block_span commission">22 290 ₽</span>
+							</div>
+							<div class="item item_block">
+								<span class="item_block_span model">Стиральная машина BEKO WKB 51001 M</span>
+								<span class="item_block_span price">11 980 ₽</span>
+								<span class="item_block_span quantity">11 980 ₽</span>
+								<span class="item_block_span action">10 980 ₽</span>
+								<span class="item_block_span information">1</span>
+								<span class="item_block_span commission">23 380 ₽</span>
+							</div>
+							<div class="item item_block_footer">
+								<span class="item_block_span model">Сумма заказа:</span>
+								<span class="item_block_span price">68 970 ₽</span>
+								<span class="item_block_span quantity">68 970 ₽</span>
+								<span class="item_block_span action">45 680 ₽</span>
+								<span class="item_block_span information">2</span>
+								<span class="item_block_span commission">23 380 ₽</span>
+							</div>
+						</div>
+					</div>
+					<div class="orders_edit_buttons">
+						<a href=" # " class="button button_save">
+							сохранить
+							<span class="img"></span>
+						</a>
+						<div class="model_page_description_checkbox">
+							<label class="checkbox search__checkbox">
+								<input type="checkbox" class="checkbox__input">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Допродажа</span>
+							</label>
+							<label class="checkbox search__checkbox">
+								<input type="checkbox" class="checkbox__input">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Добавить в существующий заказ</span>
+							</label>
+						</div>
+						<a href=" # " class="button button_delete">
+							удалить
+							<span class="img"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.editeing_task -->
+		</div>
+		<!-- END WORKAREA -->
+		<!-- /.content -->
+
+		<!-- /.middle__container -->
+	</div>
+	<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+</body>
+
+</html>
