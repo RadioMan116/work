@@ -19,6 +19,7 @@ function hamburger(element, menu) {
 }
 
 $(document).ready(function () {
+  // T-50
   $(".slideThree label").click(function () {
     $(this.parentNode).toggleClass("active");
   });
@@ -39,6 +40,9 @@ $(document).ready(function () {
   $(".middle__brands_table_title_model_page span").click(function () {
     $(this).toggleClass("active");
   });
+  $(".js-middle__brands_table_block").click(function () {
+    $(this).toggleClass("active");
+  });
   $(".js_download").click(function () {
     $(".editing_task").addClass("editing_task_active");
   });
@@ -57,6 +61,7 @@ $(document).ready(function () {
   $(".js_close_sidebar").click(function () {
     $(".middle__sidebar").toggleClass("middle__sidebar__active");
   });
+  // T-50-end
 
 
   window.globalPopup = new Popup();

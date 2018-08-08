@@ -222,7 +222,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
             .button {
               position: relative;
               display: flex;
@@ -603,6 +602,15 @@
         &:hover {
           color: #8a9ba8;
           border: solid 1px #b3b5cb;
+        }
+      }
+    }
+    &_report_3 {
+      .middle__title_h2_a {
+        background: url("https://icongr.am/entypo/chevron-down.svg?color=c4cdd5") 100% / 30px no-repeat;
+        padding-right: 30px;
+        &:hover {
+          background: url("https://icongr.am/entypo/chevron-down.svg?color=4580e6") 100% / 30px no-repeat;
         }
       }
     }
@@ -1680,13 +1688,12 @@
               line-height: 1.17;
               letter-spacing: normal;
               color: #bfccd6;
-              width:50px;
+              width: 50px;
               margin-left: 8px;
               &:first-child {
                 width: 104px;
               }
             }
-            
           }
           &_block {
             .span {
@@ -1698,14 +1705,213 @@
               line-height: 1.67;
               letter-spacing: normal;
               color: #293742;
-              width:50px;
+              width: 50px;
               margin-left: 8px;
               &:first-child {
                 width: 104px;
-                color:#4580e6;
+                color: #4580e6;
               }
             }
           }
+        }
+      } //REPORT_3.html
+      &_report_3 {
+        .middle__brands_table {
+          &_title {
+            .span {
+              font-family: "Exo2-Semi";
+              font-size: 12px;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.17;
+              letter-spacing: normal;
+              color: #bfccd6;
+              margin-left: 16px;
+              &__score {
+                width: 47px;
+              }
+              &__order {
+                width: 48px;
+              }
+              &__number {
+                width: 112px;
+              }
+              &__date {
+                width: 59px;
+              }
+              &__numeric {
+                width: 112px;
+              }
+              &__block {
+                width: unset;
+              }
+            }
+          }
+          &_block {
+            .span {
+              font-family: "SourceSansPro";
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              color: #293742;
+              margin-left: 16px;
+              &__score {
+                width: 47px;
+                color: #4580e6;
+                font-weight: bold;
+              }
+              &__order {
+                width: 48px;
+              }
+              &__number {
+                width: 112px;
+              }
+              &__date {
+                width: 59px;
+              }
+              &__numeric {
+                width: 112px;
+              }
+              &__block {
+                width: unset;
+              }
+            }
+          }
+        }
+        .span {}
+      }
+      &_report_2 {
+        .middle__brands_table {
+          &_title {
+            .span {
+              font-family: "Exo2-Semi";
+              font-size: 12px;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.17;
+              letter-spacing: normal;
+              color: #bfccd6;
+              margin-left: 16px;
+              &__score {
+                width: 47px;
+              }
+              &__order {
+                width: 112px;
+              }
+              &__number {
+                width: 112px;
+              }
+              &__date {
+                width: 532px;
+              }
+              &__numeric {
+                width: 84px;
+              }
+              &__block {
+                width: 76px;
+              }
+              &__commission {
+                width: 57px;
+              }
+              &__wage {
+                width: 36px;
+              }
+              &__provider {
+                width: 130px;
+              }
+              &__received {
+                width: 60px;
+              }
+            }
+          }
+          &_block {
+            .span {
+              font-family: "SourceSansPro";
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              color: #293742;
+              margin-left: 16px;
+              &__score {
+                width: 47px;
+                color: #4580e6;
+                font-weight: bold;
+              }
+              &__order {
+                width: 112px;
+              }
+              &__number {
+                width: 112px;
+              }
+              &__date {
+                display: block;
+                width: 532px;
+                color: #f55656;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding-right: 16px;
+                &_info{
+                  display: none;
+                  &:first-child{
+                    display: block;
+                  }
+                   &-green{
+                    color: #15b371;
+                   }
+                }   
+              }
+              &__numeric {
+                width: 84px;
+              }
+              &__block {
+                width: 76px;
+              }
+              &__commission {
+                width: 57px;
+              }
+              &__wage {
+                width: 36px;
+              }
+              &__provider {
+                width: 130px;
+              }
+              &__received {
+                width: 60px;
+              }
+            }
+          }
+        }
+        .active{
+         height: unset;
+         min-height: 48px;
+         align-items: flex-start;
+         padding-top: 14px;
+         padding-bottom: 13px;
+         .span {
+        
+          &__date {
+            width: 532px;
+            overflow: inherit;
+            white-space:normal;
+            display: flex;
+            flex-wrap: wrap;
+            height: unset;
+            
+            &_info {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
         }
       }
     }
