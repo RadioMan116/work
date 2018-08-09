@@ -27,13 +27,13 @@ $(document).ready(function () {
     $(this.parentNode).toggleClass("active");
   });
  
-  $(".js_middle__brands_table_nav_h3").click(function () {
+  $(".js_middle__brands__table__nav_h3").click(function () {
     $(this).toggleClass("active");
   });
-  $(".middle__brands_table_title_model_page span").click(function () {
+  $(".middle__brands_table_title__model-page span").click(function () {
     $(this).toggleClass("active");
   });
-  $(".js-middle__brands_table_block").click(function () {
+  $(".js-middle__brands__table__block").click(function () {
     $(this).toggleClass("active");
   });
   $(".js_download").click(function () {
