@@ -23,17 +23,10 @@ $(document).ready(function () {
   $(".slideThree label").click(function () {
     $(this.parentNode).toggleClass("active");
   });
-  $(".middle__brands_table_block__index_5 .js_span__math").click(function () {
-    $(this.parentNode).toggleClass("middle__brands_table_block__index_5_active");
+  $(".js_span-math").click(function () {
+    $(this.parentNode).toggleClass("active");
   });
-  $(".middle__brands_table_block__index_6 .js_span__math").click(function () {
-    $(this.parentNode).toggleClass("middle__brands_table_block__index_6_active");
-  });
-  $(".middle__brands_table_block__index_7 .js_span__math").click(function(e) {
-    e.preventDefault();
-    $(".span__client").removeClass('span__client_active');
-    $(this.parentNode).addClass('span__client_active');
-  })
+ 
   $(".js_middle__brands_table_nav_h3").click(function () {
     $(this).toggleClass("active");
   });
@@ -52,10 +45,10 @@ $(document).ready(function () {
   $(".js_span_close").click(function () {
     $(".orders_edit").removeClass("orders_edit_active");
   });
-  $(".js__span__manager").click(function () {
+  $(".js__span-manager").click(function () {
     $(this).toggleClass("active");
   });
-  $(".js-span__consist_img").click(function () {
+  $(".js-span-consist__img").click(function () {
     $(".orders_edit").addClass("orders_edit_active");
   });
   $(".js_close_sidebar").click(function () {
