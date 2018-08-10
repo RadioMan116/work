@@ -1,4 +1,4 @@
-.orders_edit {
+.orders__edit {
 	position: absolute;
 	background-color: #f5f8fa;
 	width: 100%;
@@ -13,12 +13,12 @@
 		padding-right: 0;
 		padding-top: 28px;
 	}
-	&_title {
+	&__title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		.span {
-			&_text {
+			&-text {
 				font-family: "Exo2-Regular";
 				font-size: 24px;
 				font-weight: normal;
@@ -28,7 +28,7 @@
 				letter-spacing: normal;
 				color: #293742;
 			}
-			&_close {
+			&-close {
 				background-image: url(https://icongr.am/material/close.svg?color=919eab);
 				background-size: cover;
 				width: 20px;
@@ -36,26 +36,26 @@
 			}
 		}
 	}
-	&_items {
+	&__items {
 		width: 100%;
 		.item {
 			display: flex;
-			&_main {
-				.item_select {
+			&__main {
+				.item-select {
 					margin-right: 32px;
-					&_order {
+					&-order {
 						width: 152px;
 					}
-					&_manager {
+					&-manager {
 						width: 160px;
 					}
-					&_status {
+					&-status {
 						width: 160px;
 					}
-					&_origin {
+					&-origin {
 						width: 120px;
 					}
-					&_region {
+					&-region {
 						width: 160px;
 					}
 				}
@@ -71,7 +71,7 @@
 						// 	margin-top: 12px;
 						// }
 					}
-					.item_form {
+					.item-form {
 						height: 32px;
 						width: 100%;
 					}
@@ -82,7 +82,7 @@
 					flex-wrap: wrap;
 				}
 			}
-			&_name {
+			&-name {
 				font-family: SourceSansPro;
 				font-size: 10px;
 				font-weight: normal;
@@ -96,7 +96,7 @@
 				width: 100%;
 				margin-bottom: 4px;
 			}
-			&_select {
+			&-select {
 				height: 32px;
 				width: 100%;
 				border-radius: 4px;
@@ -117,92 +117,92 @@
 				appearance: none;
 				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
 			}
-			&_form .item_form {
+			&-form .item-form {
 				width: 100%;
 				border-radius: 4px;
 				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
 				border: solid 1px #d8e1e8;
 				height: 32px;
-				&_input {
-					background-color: #ffffff;
-					width: 100%;
-					border: none;
-					outline: none;
-					box-sizing: border-box;
+			}
+			&-input {
+				background-color: #ffffff;
+				width: 100%;
+				border: none;
+				outline: none;
+				box-sizing: border-box;
+				&::placeholder {
+					text-transform: uppercase;
+					font-family: "Exo2-Semi";
+					font-size: 12px;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.33;
+					letter-spacing: 0.8px;
+					color: #bfccd6;
+					padding-left: 12px;
+				}
+				&-city {
+					width: 360px;
+					padding: 0 0 0 10px;
+					height: 29px;
 					&::placeholder {
-						text-transform: uppercase;
-						font-family: "Exo2-Semi";
-						font-size: 12px;
-						font-weight: 600;
-						font-style: normal;
-						font-stretch: normal;
-						line-height: 1.33;
-						letter-spacing: 0.8px;
-						color: #bfccd6;
-						padding-left: 12px;
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_city {
-						width: 360px;
-						padding: 0 0 0 10px;
-						height: 29px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-station {
+					width: 214px;
+					height: 29px;
+					padding: 0 10px 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_station {
-						width: 214px;
-						height: 29px;
-						padding: 0 10px 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-street {
+					width: 360px;
+					height: 29px;
+					padding: 0 0 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_street {
-						width: 360px;
-						height: 29px;
-						padding: 0 0 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-house {
+					width: 61px;
+					height: 29px;
+					padding: 0 5px 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_house {
-						width: 61px;
-						height: 29px;
-						padding: 0 5px 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-entrance {
+					width: 92px;
+					height: 29px;
+					padding: 0 5px 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_entrance {
-						width: 92px;
-						height: 29px;
-						padding: 0 5px 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-floor {
+					width: 61px;
+					height: 29px;
+					padding: 0 5px 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
-					&_floor {
-						width: 61px;
-						height: 29px;
-						padding: 0 5px 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
-					}
-					&_information {
-						width: 565px;
-						height: 29px;
-						padding: 0 10px;
-						&::placeholder {
-							padding: 0;
-							border-bottom: 1px solid #f4f6f8;
-						}
+				}
+				&-information {
+					width: 565px;
+					height: 29px;
+					padding: 0 10px;
+					&::placeholder {
+						padding: 0;
+						border-bottom: 1px solid #f4f6f8;
 					}
 				}
 			}
@@ -238,7 +238,7 @@
 				}
 			}
 			form {
-				max-width:100% ;
+				max-width: 100%;
 				.item_textarea {
 					width: 100%;
 					resize: none;
@@ -258,7 +258,7 @@
 					overflow: auto;
 				}
 			}
-			&_form {
+			&-form {
 				border-radius: 4px;
 				background-color: rgba(255, 255, 255, 0);
 				border: solid 1px #d8e1e8;
@@ -270,35 +270,30 @@
 					width: 272px;
 				}
 			}
-			&_first {
+			&__first {
 				margin-top: 12px;
 				margin-bottom: 32px;
 			}
-			&_second {
-				// margin-bottom: 12px;
-			}
-			&_third {
+			&__third {
 				margin-bottom: 20px;
 			}
-			&_four {
-				&-item {
-					display: flex;
-					flex-wrap: wrap;
-					width: 272px;
-					&:nth-child(2) {
-						margin: 0 32px;
+			&__four {
+				display: flex;
+				flex-wrap: wrap;
+				width: 272px;
+				&:nth-child(2) {
+					margin: 0 32px;
+				}
+				&:last-child {
+					margin-bottom: 62px;
+				}
+				.item {
+					&-name {
+						margin-top: 12px;
+						height: 16px;
 					}
-					&:last-child {
-						margin-bottom: 62px;
-					}
-					.item {
-						&_name {
-							margin-top: 12px;
-							height: 16px;
-						}
-						&_form {
-							width: 100%;
-						}
+					&-form {
+						width: 100%;
 					}
 				}
 			}
@@ -326,7 +321,7 @@
 			}
 		}
 	}
-	&_table {
+	&__table {
 		max-width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -342,7 +337,7 @@
 			color: #30404d;
 			margin: 32px 16px 12px;
 		}
-		&_items {
+		&__items {
 			max-width: 100%;
 			.item {
 				border-radius: 4px;
@@ -373,7 +368,7 @@
 					width: 104px;
 				}
 			}
-			.item_title {
+			.item__title {
 				&_span {
 					font-family: "Exo2-Semi";
 					font-size: 14px;
@@ -385,9 +380,9 @@
 					color: #bfccd6;
 				}
 			}
-			.item_block {
+			.item__block {
 				border-top: none;
-				&_span {
+				&-span {
 					font-family: "SourceSansPro";
 					font-size: 14px;
 					font-weight: normal;
@@ -416,7 +411,7 @@
 						background: #f55656;
 					}
 				}
-				&_footer {
+				&-footer {
 					border-top: 1px solid #394b59;
 					span {
 						font-family: "SourceSansPro";
@@ -431,11 +426,11 @@
 				}
 			}
 		}
-		.middle__brands_table_nav {
+		.middle__brands__table__nav {
 			margin-top: 20px;
 		}
 	}
-	&_buttons {
+	&__buttons {
 		display: flex;
 		align-items: center;
 		.button {
@@ -460,7 +455,7 @@
 			transition: 0.2s ease-in-out;
 			padding: 12px 12px 13px;
 			opacity: .4;
-			&_save {
+			&-save {
 				background-color: #4580e6;
 				.img {
 					background-image: url("https://icongr.am/clarity/check.svg?color=ffffff");
@@ -473,7 +468,7 @@
 					opacity: 1;
 				}
 			}
-			&_delete {
+			&-delete {
 				background-color: #f55656;
 				margin: 0 0 0 auto;
 				.img {
@@ -488,7 +483,7 @@
 				}
 			}
 		}
-		.model_page_description_checkbox {
+		.model-page__description__checkbox {
 			display: flex;
 			align-items: center;
 			label {

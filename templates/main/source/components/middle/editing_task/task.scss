@@ -1,4 +1,4 @@
-.editing_task {
+.editing__task {
 	position: absolute;
 	background-color: #f9fafbe7;
 	width: 100%;
@@ -13,12 +13,12 @@
 		padding-right: 0;
 		padding-top: 28px;
 	}
-	&_title {
+	&__title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		.span {
-			&_text {
+			&-text {
 				font-family: "Exo2-Regular";
 				font-size: 24px;
 				font-weight: normal;
@@ -28,7 +28,7 @@
 				letter-spacing: normal;
 				color: #293742;
 			}
-			&_close {
+			&-close {
 				background-image: url(https://icongr.am/material/close.svg?color=919eab);
 				background-size: cover;
 				width: 20px;
@@ -36,7 +36,7 @@
 			}
 		}
 	}
-	&_items {
+	&__items {
 		width: 100%;
 		display: flex;
 		.item {
@@ -47,7 +47,7 @@
 			&:nth-child(2) {
 				margin: 0 32px;
 			}
-			&_name {
+			&-name {
 				font-family: "Exo2-Medium";
 				font-size: 16px;
 				font-weight: 500;
@@ -61,7 +61,7 @@
 				width: 100%;
 				margin-bottom: 4px;
 			}
-			&_select {
+			&-select {
 				height: 32px;
 				width: 100%;
 				border-radius: 4px;
@@ -82,7 +82,7 @@
 				appearance: none;
 				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
 			}
-			&_form {
+			&-form {
 				width: 100%;
 				border-radius: 4px;
 				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
@@ -107,7 +107,7 @@
 					}
 				}
 			}
-			&_date {
+			&-date {
 				width: 100%;
 				height: 32px;
 				border-radius: 4px;
@@ -140,7 +140,7 @@
 			}
 			form {
 				width: 100%;
-				.item_textarea {
+				.item-textarea {
 					width: 100%;
 					resize: none;
 					border-radius: 4px;
@@ -160,18 +160,16 @@
 				}
 			}
 			.form {
-				&_chronology {
+				&-chronology {
 					.item {
-						&_name {}
-						&_textarea {
+						&-textarea {
 							height: 224px;
 						}
 					}
 				}
-				&_comment {
+				&-comment {
 					.item {
-						&_name {}
-						&_textarea {
+						&-textarea {
 							height: 96px;
 						}
 					}
@@ -179,12 +177,12 @@
 			}
 		}
 	}
-	&_table {
+	&__table {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 33px;
-		&_title {
+		&__title {
 			font-family: "Exo2-Medium";
 			font-size: 16px;
 			font-weight: 500;
@@ -195,7 +193,7 @@
 			color: #30404d;
 			margin: 32px 16px 12px;
 		}
-		&_items {
+		&__items {
 			.item {
 				border-radius: 4px;
 				background-color: #ffffff;
@@ -222,9 +220,9 @@
 					&_green {}
 				}
 			}
-			.item_title {
+			.item__title {
 				border-top: 4px solid #e1e8ed;
-				&_span {
+				&-span {
 					font-family: "Exo2-Semi";
 					font-size: 14px;
 					font-weight: 600;
@@ -235,9 +233,9 @@
 					color: #bfccd6;
 				}
 			}
-			.item_block {
+			.item__block {
 				border-top: none;
-				&_span {
+				&-span {
 					font-family: "SourceSansPro";
 					font-size: 14px;
 					font-weight: normal;
@@ -272,7 +270,7 @@
 			}
 		}
 	}
-	&_buttons {
+	&__buttons {
 		display: flex;
 		justify-content: space-between;
 		.button {
@@ -297,7 +295,7 @@
 			transition: 0.2s ease-in-out;
 			padding: 12px 12px 13px;
 			opacity: .4;
-			&_save {
+			&-save {
 				background-color: #4580e6;
 				.img {
 					background-image: url("https://icongr.am/clarity/check.svg?color=ffffff");
@@ -310,7 +308,7 @@
 					opacity: 1;
 				}
 			}
-			&_delete {
+			&-delete {
 				background-color: #f55656;
 				.img {
 					background-image: url("https://icongr.am/entypo/trash.svg?color=ffffff");
