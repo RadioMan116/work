@@ -6,15 +6,15 @@
 
 		{% include 'header/global/header.html' %}
 
-		<div class="middle">
+		<div class="section">
 			<div class="content">
-				<div class="middle__title">
-					<h2 class="middle__title__h2">Поиск по каталогу
-						<a href="" class="middle__title__h2__a">Hausdorf</a>
-						<img src="{{src}}external_blue.svg" alt="" class="middle__title__h2__img">
+				<div class="section__title">
+					<h2 class="section__text">Поиск по каталогу
+						<a href="" class="section__text__a">Hausdorf</a>
+						<img src="{{src}}external_blue.svg" alt="" class="section__text__img">
 					</h2>
-					<div class="middle__title__select">
-						<select class="select select-score" required>
+					<div class="section__select">
+						<select class="select select__score" required>
 							<option value="">Магазин</option>
 							<optgroup label="монобренды"></optgroup>
 							{% for item in data.menu.monobrands %}
@@ -25,7 +25,7 @@
 							<option class="option ">{{ item }}</option>
 							{% endfor %}
 						</select>
-						<select class="select select-category">
+						<select class="select select__category">
 							<option value="">Категория</option>
 							<option>Apples</option>
 							<option>Chocklate</option>
@@ -33,123 +33,123 @@
 						</select>
 						<form class="form">
 							<input class='input' type="text" placeholder="Поиск модели…">
-							<img src="{{src}}settings.svg" alt="" class="button-settings">
-							<img src="{{src}}magnifyingglass.svg" alt="" class="button-magnifyingglass">
+							<img src="{{src}}settings.svg" alt="" class="form__img form__img_settings">
+							<img src="{{src}}magnifyingglass.svg" alt="" class="form__img form__img_magnifyingglass">
 						</form>
 					</div>
 				</div>
-				<div class="middle__brands">
-					<h3 class="middle__brands__h3">Hausdorf каталог</h3>
-					<div class="middle__brands__items">
-						<div class="middle__brands__list">
-							<a href="#" class="middle__brands__link">Холодильники</a>
-							<a href="#" class="middle__brands__link">Винные шкафы</a>
-							<a href="#" class="middle__brands__link">Хьюмидоры</a>
-							<a href="#" class="middle__brands__link">Стиральные машины</a>
-							<a href="#" class="middle__brands__link">Сушильные машины</a>
-							<a href="#" class="middle__brands__link">Гладильные машины</a>
-							<a href="#" class="middle__brands__link">Варочные панели</a>
-							<a href="#" class="middle__brands__link">Духовые шкафы</a>
-							<a href="#" class="middle__brands__link">Микроволновые печи</a>
-							<a href="#" class="middle__brands__link">Пароварки</a>
-							<a href="#" class="middle__brands__link">Посудомоечные машины</a>
-							<a href="#" class="middle__brands__link">Кофемашины</a>
+				<div class="section__brands">
+					<h3 class="section__subtitle">Hausdorf каталог</h3>
+					<div class="section__items">
+						<div class="section__list">
+							<a href="#" class="section__link">Холодильники</a>
+							<a href="#" class="section__link">Винные шкафы</a>
+							<a href="#" class="section__link">Хьюмидоры</a>
+							<a href="#" class="section__link">Стиральные машины</a>
+							<a href="#" class="section__link">Сушильные машины</a>
+							<a href="#" class="section__link">Гладильные машины</a>
+							<a href="#" class="section__link">Варочные панели</a>
+							<a href="#" class="section__link">Духовые шкафы</a>
+							<a href="#" class="section__link">Микроволновые печи</a>
+							<a href="#" class="section__link">Пароварки</a>
+							<a href="#" class="section__link">Посудомоечные машины</a>
+							<a href="#" class="section__link">Кофемашины</a>
 						</div>
-						<div class="middle__brands__list">
-							<a href="#" class="middle__brands__link">Вытяжки</a>
-							<a href="#" class="middle__brands__link">Подогреватели</a>
-							<a href="#" class="middle__brands__link">Мойки</a>
-							<a href="#" class="middle__brands__link">Смесители</a>
-							<a href="#" class="middle__brands__link">Барбекю</a>
-							<a href="#" class="middle__brands__link">Комби-панели</a>
-							<a href="#" class="middle__brands__link">Пылесосы</a>
-							<a href="#" class="middle__brands__link">Телевизоры</a>
-							<a href="#" class="middle__brands__link">Аксессуары</a>
-							<a href="#" class="middle__brands__link">Профессиональная техника</a>
-							<a href="#" class="middle__brands__link">Тостеры</a>
-							<a href="#" class="middle__brands__link">Комбайны</a>
+						<div class="section__list">
+							<a href="#" class="section__link">Вытяжки</a>
+							<a href="#" class="section__link">Подогреватели</a>
+							<a href="#" class="section__link">Мойки</a>
+							<a href="#" class="section__link">Смесители</a>
+							<a href="#" class="section__link">Барбекю</a>
+							<a href="#" class="section__link">Комби-панели</a>
+							<a href="#" class="section__link">Пылесосы</a>
+							<a href="#" class="section__link">Телевизоры</a>
+							<a href="#" class="section__link">Аксессуары</a>
+							<a href="#" class="section__link">Профессиональная техника</a>
+							<a href="#" class="section__link">Тостеры</a>
+							<a href="#" class="section__link">Комбайны</a>
 						</div>
-						<div class="middle__brands__list">
-							<a href="#" class="middle__brands__link">Миксеры и Блендеры</a>
-							<a href="#" class="middle__brands__link">Мясорубки</a>
-							<a href="#" class="middle__brands__link">Чайники</a>
-							<a href="#" class="middle__brands__link">Соковыжималки</a>
-							<a href="#" class="middle__brands__link">Вафельницы</a>
-							<a href="#" class="middle__brands__link">Измельчители</a>
-							<a href="#" class="middle__brands__link">Кухонные процессоры</a>
-							<a href="#" class="middle__brands__link">Варочные центры</a>
-							<a href="#" class="middle__brands__link">Кондиционеры</a>
-							<a href="#" class="middle__brands__link">Воздухоочистители</a>
-							<a href="#" class="middle__brands__link">Хлебопечки</a>
-							<a href="#" class="middle__brands__link">Электроварки</a>
+						<div class="section__list">
+							<a href="#" class="section__link">Миксеры и Блендеры</a>
+							<a href="#" class="section__link">Мясорубки</a>
+							<a href="#" class="section__link">Чайники</a>
+							<a href="#" class="section__link">Соковыжималки</a>
+							<a href="#" class="section__link">Вафельницы</a>
+							<a href="#" class="section__link">Измельчители</a>
+							<a href="#" class="section__link">Кухонные процессоры</a>
+							<a href="#" class="section__link">Варочные центры</a>
+							<a href="#" class="section__link">Кондиционеры</a>
+							<a href="#" class="section__link">Воздухоочистители</a>
+							<a href="#" class="section__link">Хлебопечки</a>
+							<a href="#" class="section__link">Электроварки</a>
 						</div>
-						<div class="middle__brands__list">
-							<a href="#" class="middle__brands__link">Вентиляторы</a>
-							<a href="#" class="middle__brands__link">Увлажнители воздуха</a>
-							<a href="#" class="middle__brands__link">Йогуртницы</a>
-							<a href="#" class="middle__brands__link">Кухонные весы</a>
-							<a href="#" class="middle__brands__link">Дровяные печи</a>
-							<a href="#" class="middle__brands__link">Посуда</a>
-							<a href="#" class="middle__brands__link">Печи</a>
+						<div class="section__list">
+							<a href="#" class="section__link">Вентиляторы</a>
+							<a href="#" class="section__link">Увлажнители воздуха</a>
+							<a href="#" class="section__link">Йогуртницы</a>
+							<a href="#" class="section__link">Кухонные весы</a>
+							<a href="#" class="section__link">Дровяные печи</a>
+							<a href="#" class="section__link">Посуда</a>
+							<a href="#" class="section__link">Печи</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content__news">
-				<div class="middle__news">
-					<div class="middle__news__title">
-						<h2 class="h2 middle__news__title_h2">Новости</h2>
-						<span class="span middle__news__title_span">Скрыть
+			<div class="section__news">
+				<div class="news">
+					<div class="news__title">
+						<h2 class="news__h2">Новости</h2>
+						<span class="news__hide">Скрыть
 							<img class="img" src="{{src}}arrow-right.svg" alt="">
 						</span>
 					</div>
-					<div class="middle__news__blocks">
-						<div class="middle__news__block-date">
-							<h6 class="middle__news__block-date__h6">22.11.17</h6>
-							<h5 class="middle__news__block-date__h5">Hausdorf</h5>
-							<img src="{{src}}warning.svg" alt="" class="middle__news__block-date__img">
+					<div class="news__blocks">
+						<div class="news__block">
+							<h6 class="news__h6">22.11.17</h6>
+							<h5 class="news__h5">Hausdorf</h5>
+							<img src="{{src}}warning.svg" alt="" class="news__img">
 						</div>
-						<h5 class="middle__news__block_h5">Бесплатное подключение делать нельзя!</h5>
-						<h6 class="middle__news__block_h6">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
+						<h5 class="news__h3">Бесплатное подключение делать нельзя!</h5>
+						<h6 class="news__h4">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
 							− 5 % (или клиент может получить бесплатное подключение)</h6>
-						<div class="middle__news__items">
-							<div class="middle__news__item middle__news__item-pink">
-								<h5 class="middle__news__item_h5">Общая информация</h5>
-								<h6 class="middle__news__item_h6">На сайте выставлено строгое РРЦ от 16.02.2017</h6>
+						<div class="news__items">
+							<div class="news__item news__item_pink">
+								<h5 class="item__h5">Общая информация</h5>
+								<h6 class="item__h6">На сайте выставлено строгое РРЦ от 16.02.2017</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-red">
-								<h5 class="middle__news__item_h5">Правила</h5>
-								<h6 class="middle__news__item_h6">Берем товар у того, кто отдает его дешевле всего!</h6>
+							<div class="news__item news__item_red">
+								<h5 class="item__h5">Правила</h5>
+								<h6 class="item__h6">Берем товар у того, кто отдает его дешевле всего!</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-green">
-								<h5 class="middle__news__item_h5">Правилах посещения шоурума</h5>
-								<h6 class="middle__news__item_h6">Первое правило ШОУРУМА – Ни когда не говори о ШОУРУМЕ</h6>
+							<div class="news__item news__item_green">
+								<h5 class="item__h5">Правилах посещения шоурума</h5>
+								<h6 class="item__h6">Первое правило ШОУРУМА – Ни когда не говори о ШОУРУМЕ</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-yellow">
-								<h5 class="middle__news__item_h5">Скидки</h5>
-								<h6 class="middle__news__item_h6">Скидки на товары по официальным акциям от представительства</h6>
+							<div class="news__item news__item_yellow">
+								<h5 class="item__h5">Скидки</h5>
+								<h6 class="item__h6">Скидки на товары по официальным акциям от представительства</h6>
 							</div>
 						</div>
-						<div class="middle__news__block_border"></div>
+						<div class="news__border"></div>
 					</div>
-					<div class="middle__news__blocks">
-						<div class="middle__news__block-date">
-							<h6 class="middle__news__block-date__h6">22.11.17</h6>
-							<h5 class="middle__news__block-date__h5">Hausdorf</h5>
-							<img src="{{src}}warning.svg" alt="" class="middle__news__block-date__img">
+					<div class="news__blocks">
+						<div class="news__block">
+							<h6 class="news__h6">22.11.17</h6>
+							<h5 class="news__h5">Hausdorf</h5>
+							<img src="{{src}}warning.svg" alt="" class="news__img">
 						</div>
-						<h5 class="middle__news__block_h5">Бесплатное подключение делать нельзя!</h5>
-						<h6 class="middle__news__block_h6">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
+						<h5 class="news__h3">Бесплатное подключение делать нельзя!</h5>
+						<h6 class="news__h4">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
 							− 5 % (или клиент может получить бесплатное подключение)</h6>
-						<div class="middle__news__items">
-							<div class="middle__news__item middle__news__item-red">
-								<h5 class="middle__news__item_h5">Правила</h5>
-								<h6 class="middle__news__item_h6">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
+						<div class="news__items">
+							<div class="news__item news__item_red">
+								<h5 class="item__h5">Правила</h5>
+								<h6 class="item__h6">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
 									% (или клиент может получить бесплатное подключение)</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-yellow">
-								<h5 class="middle__news__item_h5">Скидки</h5>
-								<h6 class="middle__news__item_h6">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
+							<div class="news__item news__item_yellow">
+								<h5 class="item__h5">Скидки</h5>
+								<h6 class="item__h6">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
 									% (или клиент может получить бесплатное подключение)</h6>
 							</div>
 						</div>
@@ -160,9 +160,9 @@
 			<!-- END WORKAREA -->
 			<!-- /.content -->
 
-			<!-- /.middle__container -->
+			<!-- /.section__container -->
 		</div>
-		<!-- /.middle -->
+		<!-- /.section -->
 
 	</div>
 	<!-- /.wrapper -->

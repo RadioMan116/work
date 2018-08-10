@@ -5,15 +5,15 @@
 	<div class="wrapper" id="js-wrapper">
 		{% include 'header/global/header.html' %}
 		<!-- WORKAREA -->
-		<div class="middle">
+		<div class="section section__model-page">
 			<div class="content">
-				<div class="middle__title">
-					<h2 class="middle__title__h2">Поиск по каталогу
-						<a href="" class="middle__title__h2__a">Hausdorf</a>
-						<img src="{{src}}external_blue.svg" alt="" class="middle__title__h2__img">
+				<div class="section__title">
+					<h2 class="section__text">Поиск по каталогу
+						<a href="" class="section__text__a">Hausdorf</a>
+						<img src="{{src}}external_blue.svg" alt="" class="section__text__img">
 					</h2>
-					<div class="middle__title__select">
-						<select class="select select-score" required>
+					<div class="section__select">
+						<select class="select select__score" required>
 							<option value="">Магазин</option>
 							<optgroup label="монобренды"></optgroup>
 							{% for item in data.menu.monobrands %}
@@ -24,7 +24,7 @@
 							<option class="option ">{{ item }}</option>
 							{% endfor %}
 						</select>
-						<select class="select select-category">
+						<select class="select select__category">
 							<option value="">Категория</option>
 							{% for item in data.menu.item %}
 							<option class="option ">{{ item }}</option>
@@ -32,11 +32,11 @@
 						</select>
 						<form class="form">
 							<input class='input' type="text" placeholder="Поиск модели…">
-							<img src="{{src}}settings.svg" alt="" class="button-settings">
-							<img src="{{src}}magnifyingglass.svg" alt="" class="button-magnifyingglass">
+							<img src="{{src}}settings.svg" alt="" class="form__img form__img_settings">
+							<img src="{{src}}magnifyingglass.svg" alt="" class="form__img form__img_magnifyingglass">
 						</form>
 					</div>
-					<div class="middle__title__model-page">
+					<div class="model-page__title">
 						<div class="model-page__description">
 							<div class="model-page__text">
 								<h2 class="model-page__h2">
@@ -53,287 +53,287 @@
 								<a href=" # " class="button model-page__button ">Добавить
 									<span class="button-plus"></span>
 								</a>
-								<select class="middle__title__select select select-city ">
+								<select class="section__select select select_city ">
 									<option value=" ">город</option>
 									<option class="option  ">Москва</option>
 								</select>
 							</div>
 						</div>
 						<div class="model-page__table">
-							<h5 class="model-page__table__h5">
-								<span class="model-page__table__img"></span>
+							<h5 class="model-page__h6">
+								<span class="model-page__img"></span>
 								Бренд:
-								<span class="model-page__table__span">4156</span>
+								<span class="model-page__span">4156</span>
 							</h5>
-							<h5 class="model-page__table__h5-two">
+							<h5 class="model-page__h6_two">
 								Рекламации:
-								<span class="model-page__table__span model-page__table__span-red">Да</span>
+								<span class="model-page__span model-page__span_red">Да</span>
 							</h5>
-							<h5 class="model-page__table__h5">
-								<span class="model-page__table__img"></span>
+							<h5 class="model-page__h6">
+								<span class="model-page__img"></span>
 								UNID:
-								<span class="model-page__table__span">529675</span>
+								<span class="model-page__span">529675</span>
 							</h5>
-							<h5 class="model-page__table__h5-two">
+							<h5 class="model-page__h6_two">
 								Снят с производства:
-								<span class="model-page__table__span model-page__table__span-green">Нет</span>
+								<span class="model-page__span model-page__span_green">Нет</span>
 							</h5>
-							<h5 class="model-page__table__h5">
-								<span class="model-page__table__img"></span>
+							<h5 class="model-page__h6">
+								<span class="model-page__img"></span>
 								Магазины:
-								<span class="model-page__table__span">4157 / 3478 / 22734</span>
+								<span class="model-page__span">4157 / 3478 / 22734</span>
 							</h5>
-							<h5 class="model-page__table__h5-two">
+							<h5 class="model-page__h6_two">
 								Ручник:
-								<span class="model-page__table__span model-page__table__span-red">Не снимать</span>
+								<span class="model-page__span model-page__span_red">Не снимать</span>
 							</h5>
-							<h5 class="model-page__table__h5">
-								<span class="model-page__table__img"></span>
+							<h5 class="model-page__h6">
+								<span class="model-page__img"></span>
 								Модель:
-								<span class="model-page__table__span">KIR 41AF20R</span>
+								<span class="model-page__span">KIR 41AF20R</span>
 							</h5>
-							<h5 class="model-page__table__h5-two">
+							<h5 class="model-page__h6_two">
 								Бесплатные услуги:
-								<span class="model-page__table__span model-page__table__span-violet">Доставка + Подключение</span>
+								<span class="model-page__span model-page__span_violet">Доставка + Подключение</span>
 							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="middle__brands">
-					<div class="middle__brands__table middle__brands__table__model-page">
-						<div class="middle__brands__table__nav">
-							<h3 class="middle__brands__table__nav_h3 js_middle__brands__table__nav_h3">Поставщики
-								<span class="middle__brands__table__nav_h3_span">25</span>
+				<div class="section__brands">
+					<div class="section__table">
+						<div class="section__nav nav">
+							<h3 class="nav__text js_nav__text">Поставщики
+								<span class="nav__text_span">25</span>
 							</h3>
-							<h3 class="middle__brands__table__nav_h3 js_middle__brands__table__nav_h3">Магазины
-								<span class="middle__brands__table__nav_h3_span">5</span>
+							<h3 class="nav__text js_nav__text">Магазины
+								<span class="nav__text_span">5</span>
 							</h3>
-							<h3 class="middle__brands__table__nav_h3 js_middle__brands__table__nav_h3">Комментарии
-								<span class="middle__brands__table__nav_h3_span">0</span>
+							<h3 class="nav__text js_nav__text">Комментарии
+								<span class="nav__text_span">0</span>
 							</h3>
 						</div>
-						<div class="middle__brands__table__title model-page__table__title">
-							<span class="span span-model ">
-								<span class="span-bars"></span>Поставщик
-								<span class="span-arrows"></span>
+						<div class="table__title">
+							<span class="span span__model ">
+								<span class="span span__bars"></span>Поставщик
+								<span class="span span__arrows"></span>
 							</span>
-							<span class="span span-availability">Наличие</span>
-							<span class="span span-purchase ">Закупка</span>
-							<span class="span span-commission ">Продажа</span>
-							<span class="span span-formula ">Я.Маркет среднее</span>
+							<span class="span span__availability">Наличие</span>
+							<span class="span span__purchase ">Закупка</span>
+							<span class="span span__commission ">Продажа</span>
+							<span class="span span__formula ">Я.Маркет среднее</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox">
+						<div class="table__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox">
 								<div class="slideThree">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability ">в наличии</span>
+								<span class="span span__availability ">в наличии</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox">
+						<div class="table__block model-page__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability ">в наличии</span>
+								<span class="span span__availability ">в наличии</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox">
+						<div class="table__block model-page__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability ">в наличии</span>
+								<span class="span span__availability ">в наличии</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox model-page__table__checkbox-color">
+						<div class="table__block model-page__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox model-page__checkbox-color">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability">Под заказ</span>
+								<span class="span span__availability">Под заказ</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox">
+						<div class="table__block model-page__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability ">в наличии</span>
+								<span class="span span__availability ">в наличии</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<span class="span span-brand ">Kuppersbusch</span>
-							<div class="model-page__table__checkbox">
+						<div class="table__block model-page__block">
+							<span class="span span__brand ">Kuppersbusch</span>
+							<div class="model-page__checkbox">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-availability ">в наличии</span>
+								<span class="span span__availability ">в наличии</span>
 							</div>
-							<div class="model-page__table__checkbox model-page__table__checkbox-two">
+							<div class="model-page__checkbox model-page__checkbox__two">
 								<div class="slideThree ">
 									<input type="checkbox" value="None" id="slideThree" name="check" checked />
 									<label class="label" for="slideThree"></label>
 								</div>
-								<span class="span span-sale ">399 950
-									<span class="span-cost ">₽</span>
+								<span class="span span__sale ">399 950
+									<span class="span span__cost ">₽</span>
 								</span>
 							</div>
-							<span class="span span-purchase ">310 130
-								<span class="span-cost ">₽</span>
+							<span class="span span__purchase ">310 130
+								<span class="span span__cost ">₽</span>
 							</span>
-							<span class="span span-commission ">89 820
-								<span class="span-cost ">₽</span>
+							<span class="span span__commission ">89 820
+								<span class="span span__cost ">₽</span>
 							</span>
 						</div>
-						<div class="middle__brands__table__block model-page__table__block">
-							<a href="" class="model-page__table__block__a">Загрузить все </a>
+						<div class="table__block model-page__block">
+							<a href="" class="model-page__a">Загрузить все </a>
 							<span class="button-plus"></span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content__news ">
-				<div class="middle__news ">
-					<div class="middle__news__title ">
-						<h2 class="h2 middle__news__title_h2 ">Новости</h2>
-						<span class="span middle__news__title_span ">Скрыть
+			<div class="section__news">
+				<div class="news ">
+					<div class="news__title ">
+						<h2 class="news__h2 ">Новости</h2>
+						<span class="news__hide ">Скрыть
 							<img class="img " src="{{src}}arrow-right.svg " alt=" ">
 						</span>
 					</div>
-					<div class="middle__news__blocks ">
-						<div class="middle__news__block-date ">
-							<h6 class="middle__news__block-date__h6 ">22.11.17</h6>
-							<h5 class="middle__news__block-date__h5 ">Hausdorf</h5>
-							<img src="{{src}}warning.svg " alt=" " class="middle__news__block-date__img ">
+					<div class="news__blocks ">
+						<div class="news__block ">
+							<h6 class="news__h6 ">22.11.17</h6>
+							<h5 class="news__h5 ">Hausdorf</h5>
+							<img src="{{src}}warning.svg " alt=" " class="news__img ">
 						</div>
-						<h5 class="middle__news__block_h5 ">Бесплатное подключение делать нельзя!</h5>
-						<h6 class="middle__news__block_h6 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
+						<h5 class="news__h3 ">Бесплатное подключение делать нельзя!</h5>
+						<h6 class="news__h4 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
 							− 5 % (или клиент может получить бесплатное подключение)</h6>
-						<div class="middle__news__items ">
-							<div class="middle__news__item middle__news__item-pink ">
-								<h5 class="middle__news__item_h5 ">Общая информация</h5>
-								<h6 class="middle__news__item_h6 ">На сайте выставлено строгое РРЦ от 16.02.2017</h6>
+						<div class="news__items ">
+							<div class="news__item news__item_pink ">
+								<h5 class="item__h5 ">Общая информация</h5>
+								<h6 class="item__h6 ">На сайте выставлено строгое РРЦ от 16.02.2017</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-red ">
-								<h5 class="middle__news__item_h5 ">Правила</h5>
-								<h6 class="middle__news__item_h6 ">Берем товар у того, кто отдает его дешевле всего!</h6>
+							<div class="news__item news__item_red ">
+								<h5 class="item__h5 ">Правила</h5>
+								<h6 class="item__h6 ">Берем товар у того, кто отдает его дешевле всего!</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-green ">
-								<h5 class="middle__news__item_h5 ">Правилах посещения шоурума</h5>
-								<h6 class="middle__news__item_h6 ">Первое правило ШОУРУМА – Ни когда не говори о ШОУРУМЕ</h6>
+							<div class="news__item news__item_green ">
+								<h5 class="item__h5 ">Правилах посещения шоурума</h5>
+								<h6 class="item__h6 ">Первое правило ШОУРУМА – Ни когда не говори о ШОУРУМЕ</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-yellow ">
-								<h5 class="middle__news__item_h5 ">Скидки</h5>
-								<h6 class="middle__news__item_h6 ">Скидки на товары по официальным акциям от представительства</h6>
+							<div class="news__item news__item_yellow ">
+								<h5 class="item__h5 ">Скидки</h5>
+								<h6 class="item__h6 ">Скидки на товары по официальным акциям от представительства</h6>
 							</div>
 						</div>
-						<div class="middle__news__block_border "></div>
+						<div class="news__border "></div>
 					</div>
-					<div class="middle__news__blocks ">
-						<div class="middle__news__block-date ">
-							<h6 class="middle__news__block-date__h6 ">22.11.17</h6>
-							<h5 class="middle__news__block-date__h5 ">Hausdorf</h5>
-							<img src="{{src}}warning.svg " alt=" " class="middle__news__block-date__img ">
+					<div class="news__blocks ">
+						<div class="news__block ">
+							<h6 class="news__h6 ">22.11.17</h6>
+							<h5 class="news__h5 ">Hausdorf</h5>
+							<img src="{{src}}warning.svg " alt=" " class="news__img ">
 						</div>
-						<h5 class="middle__news__block_h5 ">Бесплатное подключение делать нельзя!</h5>
-						<h6 class="middle__news__block_h6 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
+						<h5 class="news__h3 ">Бесплатное подключение делать нельзя!</h5>
+						<h6 class="news__h4 ">Скидки на товары только по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону
 							− 5 % (или клиент может получить бесплатное подключение)</h6>
-						<div class="middle__news__items ">
-							<div class="middle__news__item middle__news__item-red ">
-								<h5 class="middle__news__item_h5 ">Правила</h5>
-								<h6 class="middle__news__item_h6 ">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
+						<div class="news__items ">
+							<div class="news__item news__item_red ">
+								<h5 class="item__h5 ">Правила</h5>
+								<h6 class="item__h6 ">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
 									% (или клиент может получить бесплатное подключение)</h6>
 							</div>
-							<div class="middle__news__item middle__news__item-yellow ">
-								<h5 class="middle__news__item_h5 ">Скидки</h5>
-								<h6 class="middle__news__item_h6 ">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
+							<div class="news__item news__item_yellow ">
+								<h5 class="item__h5 ">Скидки</h5>
+								<h6 class="item__h6 ">Скидки на товары по официальным акциям от представительства. Можно делать самостоятельную скидку по телефону − 5
 									% (или клиент может получить бесплатное подключение)</h6>
 							</div>
 						</div>
@@ -343,9 +343,9 @@
 			<!-- END WORKAREA -->
 			<!-- /.content -->
 
-			<!-- /.middle__container -->
+			<!-- /.section__container -->
 		</div>
-		<!-- /.middle -->
+		<!-- /.section -->
 
 	</div>
 	<!-- /.wrapper -->
