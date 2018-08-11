@@ -224,55 +224,6 @@
         color: #293742;
       }
     }
-    &__orders-all {
-        &__select {
-          flex-wrap: wrap;
-          height: unset;
-          .item {
-            height: 40px;
-            max-width: 225px;
-            width: 100%;
-            padding-left: 16px;
-            &__form {
-              max-width: 926px;
-              width: 100%;
-              border-radius: 4px;
-              box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-              background-color: #ffffff;
-              border: solid 1px #d8e1e8;
-              margin-right: 32px;
-              margin-bottom: 8px;
-              input {
-                width: 100%;
-                padding-left: none;
-              }
-            }
-            &__date {
-              max-width: 220px;
-              &_last {
-                max-width: 273px;
-              }
-            }
-          }
-        }
-        &__pagination {
-          &_select {
-            border-radius: 4px;
-            box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-            border: solid 1px #d8e1e8;
-            text-transform: uppercase;
-            font-family: "Exo2-Semi";
-            font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: 0.8px;
-            padding-left: 16px;
-          }
-        }
-      
-    }
     &__report-3 {
       .section__text__a {
         background: url("https://icongr.am/entypo/chevron-down.svg?color=c4cdd5") 100% / 30px no-repeat;
@@ -706,6 +657,7 @@
    
     .active {
       color: #30404d;
+      padding: 12px 16px !important;
       border-bottom: 4px solid #007ace;
       span {
         color: #4580e6;
@@ -878,7 +830,7 @@
             margin-bottom: 0;
           }
         }
-        &__pink {
+        &_pink {
           border-left: 4px solid #4580e6;
           h5 {
             color: #4580e6;
@@ -1073,7 +1025,7 @@
         margin-bottom: 0;
         height: 50px;
       }
-      &__checkbox {
+      &__check {
         display: flex;
         margin-left: 77px;
         margin-bottom: 10px;
@@ -1160,7 +1112,7 @@
             left: 39px;
           }
         }
-        &__two {
+        &_two {
           margin-left: 90px;
           .slideThree {
             background: #4580e6;
@@ -1307,13 +1259,16 @@
     }
     .select {
       width: 166px;
-      height: 32px;
+      height: 40px;
     }
   }
   &__OKK-1 {
     .table {
       &__title {
         .span {
+          &:hover {
+            color: #394b59;
+          }
           &__date {
             margin-left: 16px;
             margin-right: 53px;
@@ -2217,7 +2172,7 @@
   }
   &__orders-all {
     .span {
-      &_number {
+      &__number {
         margin-left: 19px;
         width: 101px;
       }
@@ -2231,19 +2186,19 @@
       &__purveyor {
         width: 137px;
       }
-      &_status {
+      &__status {
         width: 123px;
       }
-      &_created {
+      &__created {
         width: 85px;
       }
-      &_shipped {
+      &__shipped {
         width: 111px;
       }
       &__consist {
         width: 92px;
       }
-      &_sum {
+      &__sum {
         width: 100px;
       }
       &__payment {
@@ -2252,128 +2207,11 @@
       &__full__name {
         width: 175px;
       }
-      &_source {
+      &__source {
         width: 85px;
       }
     }
     .section{
-      &__table {
-        &__block {
-          .span {
-            font-weight: normal;
-            color: #394b59;
-            height: unset;
-            b {
-              font-size: 11px;
-              font-weight: 600;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.45;
-              letter-spacing: normal;
-              color: #293742;
-              margin-top: -4px;
-            }
-            &_number {
-              padding-left: 3px;
-              color: #4580e6;
-              font-weight: 700;
-            }
-            &__manager {
-              padding-left: 14px;
-            }
-            &__score {
-              padding-left: 3px;
-              display: flex;
-              flex-wrap: wrap;
-              font-weight: 300;
-            }
-            &__purveyor {
-              padding-left: 2px;
-              display: flex;
-              flex-wrap: wrap;
-              font-weight: 300;
-            }
-            &_status {
-              padding-left: 3px;
-              text-transform: uppercase;
-              font-family: "Exo2-Semi";
-              font-size: 10px;
-              font-weight: 600;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.4;
-              letter-spacing: 0.3px;
-              &_circle {
-                width: 12px;
-                height: 12px;
-                border-radius: 10px;
-                margin-right: 4px;
-              }
-              &__orange {
-                color: #f2b824;
-                span {
-                  background: #f2b824;
-                }
-              }
-              &_grey {
-                color: #9fafaf;
-                span {
-                  background: #9fafaf;
-                }
-              }
-              &__brown {
-                color: #997e69;
-                span {
-                  background: #997e69;
-                }
-              }
-            }
-            &_created {
-              padding-left: 5px;
-            }
-            &_shipped {
-              padding-left: 3px;
-            }
-            &__consist {
-              padding-left: 20px;
-              &__img {
-                background-image: url(https://icongr.am/octicons/clippy.svg?color=bfccd6);
-                width: 16px;
-                height: 16px;
-                z-index: 10;
-                background-size: cover;
-                &:hover {
-                  background-image: url(https://icongr.am/octicons/clippy.svg?color=007ace);
-                }
-              }
-            }
-            &_sum {
-              padding-left: 5px;
-            }
-            &__payment {
-              padding-left: 6px;
-            }
-            &__full__name {
-              padding-left: 6px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              padding-right: 16px;
-              display: block;
-            }
-            &_source {
-              padding-left: 3px;
-            }
-          }
-        }
-        &__title {
-          .span {
-            &:hover {
-              color: #394b59;
-            }
-          }
-        }
-      }
       &__select {
         flex-wrap: wrap;
         height: unset;
@@ -2385,27 +2223,139 @@
           &__form {
             max-width: 926px;
             width: 100%;
-            border-radius: 4px;
-            box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
-            background-color: #ffffff;
-            border: solid 1px #d8e1e8;
             margin-right: 32px;
             margin-bottom: 8px;
-            input {
+            .input {
               width: 100%;
-              padding-left: none;
+              padding-left: unset;
             }
           }
           &__date {
-            max-width: 220px;
+            max-width: 217px;
             &_last {
-              max-width: 273px;
+              max-width: 268px;
             }
           }
         }
       }
     }
-   
+    .table {
+      &__block {
+        .span {
+          font-weight: normal;
+          color: #394b59;
+          height: unset;
+          b {
+            font-size: 11px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.45;
+            letter-spacing: normal;
+            color: #293742;
+            margin-top: -4px;
+          }
+          &__number {
+            padding-left: 3px;
+            color: #4580e6;
+            font-weight: 700;
+          }
+          &__manager {
+            padding-left: 14px;
+          }
+          &__score {
+            padding-left: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: 300;
+          }
+          &__purveyor {
+            padding-left: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: 300;
+          }
+          &__status {
+            padding-left: 3px;
+            text-transform: uppercase;
+            font-family: "Exo2-Semi";
+            font-size: 10px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: 0.3px;
+            &_circle {
+              width: 12px;
+              height: 12px;
+              border-radius: 10px;
+              margin-right: 4px;
+            }
+            &_orange {
+              color: #f2b824;
+              span {
+                background: #f2b824;
+              }
+            }
+            &_grey {
+              color: #9fafaf;
+              span {
+                background: #9fafaf;
+              }
+            }
+            &_brown {
+              color: #997e69;
+              span {
+                background: #997e69;
+              }
+            }
+          }
+          &__created {
+            padding-left: 5px;
+          }
+          &__shipped {
+            padding-left: 3px;
+          }
+          &__consist {
+            padding-left: 20px;
+            &__img {
+              background-image: url(https://icongr.am/octicons/clippy.svg?color=bfccd6);
+              width: 16px;
+              height: 16px;
+              z-index: 10;
+              background-size: cover;
+              &:hover {
+                background-image: url(https://icongr.am/octicons/clippy.svg?color=007ace);
+              }
+            }
+          }
+          &__sum {
+            padding-left: 5px;
+          }
+          &__payment {
+            padding-left: 6px;
+          }
+          &__full__name {
+            padding-left: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 16px;
+            display: block;
+          }
+          &__source {
+            padding-left: 3px;
+          }
+        }
+      }
+      &__title {
+        .span {
+          &:hover {
+            color: #394b59;
+          }
+        }
+      }
+    }
   } //REPORT_3.html
   &__report-3 {
     .section__table {

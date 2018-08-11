@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(this.parentNode).toggleClass("active");
   });
  
-  $(".js_middle__brands__table__nav_h3").click(function () {
+  $(".js_nav__text").click(function () {
     $(this).toggleClass("active");
   });
   $(".middle__brands_table_title__model-page span").click(function () {
@@ -37,10 +37,10 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
   $(".js_download").click(function () {
-    $(".editing__task").addClass("editing_task__active");
+    $(".editing__task").addClass("editing__task__active");
   });
   $(".js_span_close").click(function () {
-    $(".editing__task").removeClass("editing_task__active");
+    $(".editing__task").removeClass("editing__task__active");
   });
   $(".js_span_close").click(function () {
     $(".orders_edit").removeClass("orders_edit_active");
@@ -48,8 +48,8 @@ $(document).ready(function () {
   $(".js__span__manager").click(function () {
     $(this).toggleClass("active");
   });
-  $(".js-span-consist__img").click(function () {
-    $(".orders_edit").addClass("orders_edit_active");
+  $(".js-span__consist__img").click(function () {
+    $(".orders__edit").addClass("orders__edit_active");
   });
   $(".js_close_sidebar").click(function () {
     $(".middle__sidebar").toggleClass("middle__sidebar__active");
