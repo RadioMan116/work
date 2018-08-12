@@ -30,29 +30,26 @@ $(document).ready(function () {
   $(".js_nav__text").click(function () {
     $(this).toggleClass("active");
   });
-  $(".middle__brands_table_title__model-page span").click(function () {
-    $(this).toggleClass("active");
-  });
-  $(".js-middle__brands__table__block").click(function () {
+  $(".js-table__block").click(function () {
     $(this).toggleClass("active");
   });
   $(".js_download").click(function () {
-    $(".editing__task").addClass("editing__task__active");
+    $(".editing-task").addClass("editing-task__active");
   });
   $(".js_span_close").click(function () {
-    $(".editing__task").removeClass("editing__task__active");
+    $(".editing-task").removeClass("editing-task__active");
   });
   $(".js_span_close").click(function () {
-    $(".orders_edit").removeClass("orders_edit_active");
+    $(".orders-edit").removeClass("orders-edit_active");
   });
   $(".js__span__manager").click(function () {
     $(this).toggleClass("active");
   });
   $(".js-span__consist__img").click(function () {
-    $(".orders__edit").addClass("orders__edit_active");
+    $(".orders-edit").addClass("orders-edit_active");
   });
-  $(".js_close_sidebar").click(function () {
-    $(".middle__sidebar").toggleClass("middle__sidebar__active");
+  $(".js_span__close").click(function () {
+    $(".section__sidebar").toggleClass("section__sidebar__active");
   });
   // T-50-end
 

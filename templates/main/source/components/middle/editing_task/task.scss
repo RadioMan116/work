@@ -1,4 +1,4 @@
-.editing__task {
+.editing-task {
 	position: absolute;
 	background-color: #f9fafbe7;
 	width: 100%;
@@ -6,7 +6,7 @@
 	z-index: 9999;
 	display: none;
 	justify-content: center;
-	.container {
+	&__container {
 		max-width: 880px;
 		width: 100%;
 		padding-left: 0;
@@ -18,7 +18,7 @@
 		justify-content: space-between;
 		align-items: center;
 		.span {
-			&-text {
+			&__text {
 				font-family: "Exo2-Regular";
 				font-size: 24px;
 				font-weight: normal;
@@ -28,7 +28,7 @@
 				letter-spacing: normal;
 				color: #293742;
 			}
-			&-close {
+			&__close {
 				background-image: url(https://icongr.am/material/close.svg?color=919eab);
 				background-size: cover;
 				width: 20px;
@@ -47,7 +47,7 @@
 			&:nth-child(2) {
 				margin: 0 32px;
 			}
-			&-name {
+			&__name {
 				font-family: "Exo2-Medium";
 				font-size: 16px;
 				font-weight: 500;
@@ -61,7 +61,7 @@
 				width: 100%;
 				margin-bottom: 4px;
 			}
-			&-select {
+			&__select {
 				height: 32px;
 				width: 100%;
 				border-radius: 4px;
@@ -82,7 +82,7 @@
 				appearance: none;
 				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
 			}
-			&-form {
+			&__form {
 				width: 100%;
 				border-radius: 4px;
 				box-shadow: inset 0 1px 2px 0 rgba(16, 22, 26, 0.2);
@@ -107,7 +107,7 @@
 					}
 				}
 			}
-			&-date {
+			&__date {
 				width: 100%;
 				height: 32px;
 				border-radius: 4px;
@@ -140,7 +140,7 @@
 			}
 			form {
 				width: 100%;
-				.item-textarea {
+				.item__textarea {
 					width: 100%;
 					resize: none;
 					border-radius: 4px;
@@ -160,16 +160,16 @@
 				}
 			}
 			.form {
-				&-chronology {
+				&__chronology {
 					.item {
-						&-textarea {
+						&__textarea {
 							height: 224px;
 						}
 					}
 				}
-				&-comment {
+				&__comment {
 					.item {
-						&-textarea {
+						&__textarea {
 							height: 96px;
 						}
 					}
@@ -182,90 +182,95 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 33px;
-		&__title {
-			font-family: "Exo2-Medium";
-			font-size: 16px;
-			font-weight: 500;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 1.25;
-			letter-spacing: normal;
-			color: #30404d;
-			margin: 32px 16px 12px;
-		}
-		&__items {
-			.item {
-				border-radius: 4px;
-				background-color: #ffffff;
-				border: solid 1px #e1e8ed;
-				height: 40px;
-				display: flex;
-				align-items: center;
-				span {
-					padding-left: 16px;
-				}
-				.model {
-					width: 280px;
-				}
-				.price {
-					width: 80px;
-				}
-				.quantity {
-					width: 72px;
-				}
-				.action {
-					width: 98px;
-					&_orange {}
-					&_red {}
-					&_green {}
-				}
+		.table {
+			&__title {
+				font-family: "Exo2-Medium";
+				font-size: 16px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				color: #30404d;
+				margin: 32px 16px 12px;
 			}
-			.item__title {
-				border-top: 4px solid #e1e8ed;
-				&-span {
-					font-family: "Exo2-Semi";
-					font-size: 14px;
-					font-weight: 600;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1;
-					letter-spacing: normal;
-					color: #bfccd6;
-				}
-			}
-			.item__block {
-				border-top: none;
-				&-span {
-					font-family: "SourceSansPro";
-					font-size: 14px;
-					font-weight: normal;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.43;
-					letter-spacing: normal;
-					color: #293742;
-				}
-				.action {
-					padding-left: 12px;
-				}
-				.action_state {
-					padding: 3.5px 15.5px;
-					border-radius: 3px;
-					font-size: 10px;
-					font-weight: bold;
-					font-style: normal;
-					font-stretch: normal;
-					line-height: 1.2;
-					letter-spacing: 0.8px;
-					text-align: center;
-					color: #ffffff;
-					text-transform: uppercase;
-					&_orange {
-						background: #f2b824;
+			&__items {
+				.item {
+					border-radius: 4px;
+					background-color: #ffffff;
+					border: solid 1px #e1e8ed;
+					height: 40px;
+					display: flex;
+					align-items: center;
+					span {
+						padding-left: 16px;
 					}
-					&_red {
-						background: #f55656;
+					&__model {
+						width: 280px;
 					}
+					&__price {
+						width: 80px;
+					}
+					&__quantity {
+						width: 72px;
+					}
+					&__action {
+						width: 98px;
+						&_orange {}
+						&_red {}
+						&_green {}
+					}
+				}
+				.item__title {
+					border-top: 4px solid #e1e8ed;
+					span {
+						font-family: "Exo2-Semi";
+						font-size: 14px;
+						font-weight: 600;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1;
+						letter-spacing: normal;
+						color: #bfccd6;
+					}
+				}
+				.item__block {
+					border-top: none;
+					span {
+						font-family: "SourceSansPro";
+						font-size: 14px;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.43;
+						letter-spacing: normal;
+						color: #293742;
+					}
+					.item{
+					&__action {
+						padding-left: 12px;
+					}
+					
+					}
+					.action__state {
+						padding: 3.5px 15.5px;
+						border-radius: 3px;
+						font-size: 10px;
+						font-weight: bold;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.2;
+						letter-spacing: 0.8px;
+						text-align: center;
+						color: #ffffff;
+						text-transform: uppercase;
+						&_orange {
+							background: #f2b824;
+						}
+						&_red {
+							background: #f55656;
+						}
+					}	
 				}
 			}
 		}
@@ -295,7 +300,7 @@
 			transition: 0.2s ease-in-out;
 			padding: 12px 12px 13px;
 			opacity: .4;
-			&-save {
+			&__save {
 				background-color: #4580e6;
 				.img {
 					background-image: url("https://icongr.am/clarity/check.svg?color=ffffff");
@@ -308,7 +313,7 @@
 					opacity: 1;
 				}
 			}
-			&-delete {
+			&__delete {
 				background-color: #f55656;
 				.img {
 					background-image: url("https://icongr.am/entypo/trash.svg?color=ffffff");
