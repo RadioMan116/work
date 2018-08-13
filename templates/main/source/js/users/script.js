@@ -45,7 +45,7 @@ $(document).ready(function () {
   $(".js__span__manager").click(function () {
     $(this).toggleClass("active");
   });
-  $(".js-span__consist__img").click(function () {
+  $(".js__span__consist__img").click(function () {
     $(".orders-edit").addClass("orders-edit_active");
   });
   $(".js_span__close").click(function () {
