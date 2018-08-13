@@ -12,9 +12,10 @@
     line-height: 1.2;
     letter-spacing: 0.8px;
     color: #f55656;
-    &_span {
-      color: #ffffff;
-      text-transform: uppercase;
-    }
+    
+  }
+  &__text {
+    color: #ffffff;
+    text-transform: uppercase;
   }
 }
