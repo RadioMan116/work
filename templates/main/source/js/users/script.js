@@ -26,7 +26,9 @@ $(document).ready(function () {
   $(".js_span__math").click(function () {
     $(this.parentNode).toggleClass("active");
   });
- 
+  $(".news__hide").click(function () {
+    $(this.parentNode).toggleClass("active");
+  });
   $(".js_nav__text").click(function () {
     $(this).toggleClass("active");
   });
@@ -36,10 +38,10 @@ $(document).ready(function () {
   $(".js_download").click(function () {
     $(".editing-task").addClass("editing-task__active");
   });
-  $(".js_span_close").click(function () {
+  $(".js_span__close").click(function () {
     $(".editing-task").removeClass("editing-task__active");
   });
-  $(".js_span_close").click(function () {
+  $(".js_span__close").click(function () {
     $(".orders-edit").removeClass("orders-edit_active");
   });
   $(".js__span__manager").click(function () {
