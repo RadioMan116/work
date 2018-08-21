@@ -23,6 +23,14 @@ $(document).ready(function () {
   $(".slideThree label").click(function () {
     $(this.parentNode).toggleClass("active");
   });
+  $(".news__h4").click(function () {
+    $(this.parentNode).toggleClass("active");
+  });
+  $(".slideThree label").click(function () {
+    $('span.span').each(function() {
+      $(this).replaceWith("<textarea  name='message' class='span'>" + $(this).html() + "</textarea>");
+    });
+  });
   $(".js_span__math").click(function () {
     $(this.parentNode).toggleClass("active");
   });
