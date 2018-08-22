@@ -6,12 +6,15 @@
 			</div>
 			<div class="header__block header__block_wide">
 				<button class="hamburger" id="js-hamburger" aria-expanded="false">
-					<span
-						class="hamburger__screen-reader-text">Menu</span>
+					<span class="hamburger__screen-reader-text">Menu</span>
 
 				</button>
 				{% include 'menu/menu-header/menu-header.html' %}
 			</div>
+			<select class="section__select select select_city ">
+				<option value=" ">город</option>
+				<option class="option  ">Москва</option>
+			</select>
 			<div class="header__block header__block_authorization">
 				{% include 'authorization/authorization.html' %}
 

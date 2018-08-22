@@ -354,11 +354,13 @@
 				height: 40px;
 				display: flex;
 				align-items: center;
-				span {
+				span,
+				input {
 					padding-left: 16px;
 				}
 				&__model {
-					width: 388px;
+					// width: 388px;
+					width: 340px;
 				}
 				&__price {
 					width: 120px;
@@ -389,7 +391,21 @@
 				}
 				&__block {
 					border-top: none;
-					span {
+					.item {
+						&__quantity {
+							width: 60px;
+						}
+						&__action {
+							width: 60px;
+							margin-left: 60px;
+						}
+					}
+					.information {
+						padding-left: 30px;
+						margin-left: 40px;
+					}
+					span,
+					input {
 						font-family: "SourceSansPro";
 						font-size: 14px;
 						font-weight: normal;
@@ -398,9 +414,22 @@
 						line-height: 1.43;
 						letter-spacing: normal;
 						color: #293742;
+						border: 0;
+					}
+					.span__rubl {
+						// width: 60px;
+						padding: 0 0 0 4px; // margin-left: -7.5%;
 					}
 					&_footer {
 						border-top: 1px solid #394b59;
+						.item{
+							&__action {
+								padding-left: 25px;
+							}
+						}
+						.information {
+							padding-left: 28px;
+						}
 						span {
 							font-family: "SourceSansPro";
 							font-size: 14px;

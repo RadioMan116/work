@@ -66,6 +66,10 @@
 						<!--end menu-->
 
 					</div>
+					<select class="section__select select select_city ">
+						<option value=" ">город</option>
+						<option class="option  ">Москва</option>
+					</select>
 					<div class="header__block header__block_authorization">
 						<div class="authorization">
 							<div class="authorization__list">
@@ -74,12 +78,12 @@
 								</div>
 								<div class="authorization__item authorization__item_text">
 									<h4 class="authorization__h4 authorization__h4_name">Алексей Григорьев</h4>
-									<h4 class="authorization__h4 authorization__h4_subname">Тестовый аккаунт</h4>
+									<!-- <h4 class="authorization__h4 authorization__h4_subname">Тестовый аккаунт</h4> -->
 								</div>
-								<div class="authorization__item authorization__item_link">
-									<img src="images/calendar.svg" alt="" class="authorization__link">
-									<img src="images/settings.svg" alt="" class="authorization__link">
-								</div>
+								<!-- <div class="authorization__item authorization__item_link">
+			<img src="images/calendar.svg" alt="" class="authorization__link">
+			<img src="images/settings.svg" alt="" class="authorization__link">
+		</div> -->
 							</div>
 						</div>
 
@@ -87,7 +91,6 @@
 				</div>
 			</div>
 		</header>
-
 		<!-- WORKAREA -->
 		<div class="section">
 			<div class="editing-task">
@@ -709,8 +712,36 @@
 
 	</div>
 	<!-- /.wrapper -->
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/script.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')
+	</script>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+	<script type="text/javascript" src="js/frontend-works.js"></script>
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
 </body>
 
 </html>

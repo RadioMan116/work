@@ -76,7 +76,7 @@
 							</h5>
 							<h5 class="model-page__h6_two">
 								Снят с производства:
-								<span class="model-page__span model-page__span_green">Нет</span>
+								<input type="text" readonly value="Нет" class="model-page__span model-page__span_green">
 							</h5>
 							<h5 class="model-page__h6">
 								<span class="model-page__img"></span>
@@ -85,7 +85,7 @@
 							</h5>
 							<h5 class="model-page__h6_two">
 								Ручник:
-								<span class="model-page__span model-page__span_red">Не снимать</span>
+								<input type="text" readonly value="Не снимать" class="model-page__span model-page__span_red">
 							</h5>
 							<h5 class="model-page__h6">
 								<span class="model-page__img"></span>
@@ -445,8 +445,7 @@
 
 	</div>
 	<!-- /.wrapper -->
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/script.min.js"></script>
+	{% include 'connect/script.html' %}
 </body>
 
 </html>
