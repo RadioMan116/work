@@ -27,15 +27,19 @@ $(document).ready(function () {
     $(this.parentNode).toggleClass("active");
   });
   $(".slideThree label").click(function () {
-    $('span.span').each(function() {
-      $(this).replaceWith("<textarea  name='message' class='span'>" + $(this).html() + "</textarea>");
-    });
+    if($(this).parent().next().prop('readonly') == false){
+      $(this).parent().next().prop('readonly',true);
+    }
+    else{
+      $(this).parent().next().prop('readonly',false);
+    }
   });
   $(".js_span__math").click(function () {
     $(this.parentNode).toggleClass("active");
   });
   $(".news__hide").click(function () {
-    $(this.parentNode).toggleClass("active");
+    $(".section__news").toggleClass("section__news__active");
+    this.textContent = this.textContent === 'Показать' ? 'Скрыть' : 'Показать';
   });
   $(".js_nav__text").click(function () {
     $(this).toggleClass("active");
