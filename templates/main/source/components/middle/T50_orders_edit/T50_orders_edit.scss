@@ -116,6 +116,12 @@
 				-moz-appearance: none;
 				appearance: none;
 				background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
+				&:invalid:not(:focus) {
+					color: black;
+				}
+				option {
+					color: black;
+				}
 			}
 			&__form .item__form {
 				width: 100%;
@@ -130,6 +136,8 @@
 				border: none;
 				outline: none;
 				box-sizing: border-box;
+				padding-left: 12px;
+				color: #394b59;
 				&::placeholder {
 					text-transform: uppercase;
 					font-family: "Exo2-Semi";
@@ -326,10 +334,6 @@
 		}
 	}
 	.table {
-		max-width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: 33px;
 		.item__title {
 			font-family: "Exo2-Medium";
 			font-size: 16px;
@@ -415,6 +419,12 @@
 			margin-top: 20px;
 		}
 	}
+	&__table {
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 33px;
+	}
 	&__buttons {
 		display: flex;
 		align-items: center;
@@ -482,7 +492,7 @@
 			}
 		}
 	}
-	&_active {
+	&__active {
 		display: flex;
 	}
 }

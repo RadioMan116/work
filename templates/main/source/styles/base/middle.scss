@@ -730,7 +730,7 @@
       }
     }
     &__active {
-      position: absolute;
+      position: fixed;
       left: 100%;
       overflow: inherit;
       .news__hide {
