@@ -27,7 +27,8 @@ $(document).ready(function () {
     $(this.parentNode).toggleClass("active");
   });
   $(".slideThree label").click(function () {
-    if($(this).parent().next().prop('readonly') == false){
+    if($(this).parent().next().focus().val('').prop('readonly') == false){
+
       $(this).parent().next().prop('readonly',true);
     }
     else{
