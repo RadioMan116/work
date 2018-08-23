@@ -25,6 +25,7 @@
     }
     .section__content {
         width: unset;
+       
     }
     &__title {
         .button {
@@ -125,6 +126,11 @@
             }
         }
     }
+    &__brands {
+        max-width: 100%;
+        overflow-x: scroll;
+        width: 97vw;
+    }
     &__text {
         display: flex;
         align-items: center;
@@ -193,8 +199,7 @@
         line-height: 1.5;
         letter-spacing: normal;
         color: #2b95d6;
-        margin-top: 12px;
-        // margin-bottom: 12px;
+        margin-top: 12px; // margin-bottom: 12px;
         height: 8.333333333333333%;
         &:first-child {
             margin-top: 0;
@@ -221,14 +226,22 @@
         font-stretch: normal;
         line-height: 1.33;
         letter-spacing: 0.8px;
-        color: #bfccd6;
+        color: #293742;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         background: url("../images/chevron-down.svg") 96% / 16px no-repeat white;
+        &:invalid:not(:focus) {
+            color: gray;
+        }
+        &:invalid:focus {
+            color: black;
+        }
+        &:focus option {
+            color: black;
+        }
         .option {
-            font-family: "Exo2-Semi";
-            color: #394b59;
+            font-family: "Exo2-Semi"; // color: #394b59;
             font-size: 12px;
             font-weight: 600;
             font-style: normal;
@@ -299,6 +312,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        flex-shrink: 0;
         .table {
             &__title,
             &__block {
@@ -719,6 +733,12 @@
                 height: 1px;
                 background-color: #d8e1e8;
             }
+            &__link {
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                color: #293742;
+            }
             .active {
                 .news__h4 {
                     white-space: normal;
@@ -967,7 +987,7 @@
                         cursor: pointer;
                         position: absolute;
                         top: 2px;
-                        left: 4px;
+                        left: 1px;
                         z-index: 1;
                         background: #fcfff4;
                         border-radius: 50px;
