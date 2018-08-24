@@ -6,6 +6,7 @@
 	z-index: 9999;
 	display: none;
 	justify-content: center;
+	overflow-y: scroll;
 	.container {
 		max-width: 880px;
 		width: 100%;
@@ -111,7 +112,7 @@
 				font-stretch: normal;
 				line-height: 1.33;
 				letter-spacing: 0.8px;
-				color: #bfccd6;
+				color: #394b59;
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
@@ -230,7 +231,7 @@
 				font-stretch: normal;
 				line-height: 1.33;
 				letter-spacing: 0.8px;
-				color: #bfccd6;
+				color: #394b59;
 				padding-left: 12px;
 				&::-webkit-calendar-picker-indicator {
 					width: 13px;

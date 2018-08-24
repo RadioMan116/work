@@ -78,7 +78,7 @@
             font-stretch: normal;
             line-height: 1.33;
             letter-spacing: 0.8px;
-            color: #bfccd6;
+            color: #293742;
             padding-left: 12px;
             &::-webkit-calendar-picker-indicator {
                 width: 13px;
@@ -129,7 +129,7 @@
     &__brands {
         max-width: 100%;
         overflow-x: scroll;
-        width: 97vw;
+        // width: 97vw;
     }
     &__text {
         display: flex;
@@ -758,6 +758,7 @@
     &__sidebar {
         position: absolute;
         bottom: 0;
+        width: 97.8%;
         height: 304px;
         border-radius: 4px;
         background-color: #f5f8fa;
@@ -929,10 +930,11 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     &__availability {
-                        width: 75px;
+                        width: 85px;
                         margin-left: 8px; // padding: 4px 8px;
                         min-width: 75px;
                         border: 0;
+                        padding-left: 4px;
                     }
                     &__sale {
                         width: 50px;
@@ -941,12 +943,11 @@
                     }
                 }
                 &_color {
-                    .slideThree,
                     .span__availability {
                         background-color: #f2b824 !important;
                     }
                 }
-                .slideThree {
+                .slideThree,.slideThree-2 {
                     width: 56px;
                     height: 20px;
                     background: #15b371;
@@ -1012,8 +1013,8 @@
                     }
                 }
                 &_two {
-                    margin-left: 90px;
-                    .slideThree {
+                    margin-left: 80px;
+                    .slideThree,.slideThree-2 {
                         background: #4580e6;
                     }
                 }
@@ -2255,6 +2256,9 @@
                 }
             }
         }
+    }
+    .brands__orders-all{
+        max-height: 70vh;
     }
     &__reports-1 {
         width: 100% !important;

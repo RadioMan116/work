@@ -20,13 +20,22 @@ function hamburger(element, menu) {
 
 $(document).ready(function () {
   // T-50
-  $(".slideThree label").click(function () {
+  $(".slideThree label,.slideThree-2 label").click(function () {
     $(this.parentNode).toggleClass("active");
   });
   $(".news__h4").click(function () {
     $(this.parentNode).toggleClass("active");
   });
   $(".slideThree label").click(function () {
+    if($(this).parent().next().focus().prop('disabled') == false){
+
+      $(this).parent().next().prop('disabled',true);
+    }
+    else{
+      $(this).parent().next().prop('disabled',false);
+    }
+  });
+  $(".slideThree-2 label").click(function () {
     if($(this).parent().next().focus().val('').prop('readonly') == false){
 
       $(this).parent().next().prop('readonly',true);
@@ -35,14 +44,6 @@ $(document).ready(function () {
       $(this).parent().next().prop('readonly',false);
     }
   });
-  $('.model-page__span').click(function() {
-    if($(this).prop('readonly') == false){
-      $(this).prop('readonly',true);
-    }
-    else{
-      $(this).prop('readonly',false);
-    }
-  })
   $('.item__block input').click(function() {
     if($(this).prop('readonly') == false){
       $(this).prop('readonly',true);
@@ -59,6 +60,7 @@ $(document).ready(function () {
     this.textContent = this.textContent === 'Показать' ? 'Скрыть' : 'Показать';
   });
   $(".js_nav__text").click(function () {
+    $('.active').removeClass("active");
     $(this).toggleClass("active");
   });
   $(".js-table__block").click(function () {
