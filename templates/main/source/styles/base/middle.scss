@@ -877,7 +877,7 @@
             }
         }
         &__active {
-            bottom: -257px;
+            bottom: -300px;
             .span__close {
                 background-image: url("https://icongr.am/entypo/chevron-up.svg?color=8a9ba8");
                 width: 16px;
@@ -888,6 +888,13 @@
                     background-image: url("https://icongr.am/entypo/chevron-up.svg");
                 }
             }
+            .sidebar__title{
+                 .span__name {
+                position: absolute;
+                top: 0;
+            }
+            }
+           
         }
     }
     &__model-page {
