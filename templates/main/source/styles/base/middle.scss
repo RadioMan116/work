@@ -155,6 +155,8 @@
             color: #4580e6;
             margin-left: 8px;
             margin-right: 4px;
+            padding-right: 25px;
+            background: url("../images/external_blue.svg") 100% /24px no-repeat ;
         }
         &__img {
             width: 24px;
@@ -240,6 +242,10 @@
         &:focus option {
             color: black;
         }
+        &:hover {
+            background: #f5f8fa;
+
+        }
         .option {
             font-family: "Exo2-Semi"; // color: #394b59;
             font-size: 12px;
@@ -289,6 +295,8 @@
             color: #394b59;
             opacity: 0.6;
             text-transform: uppercase;
+            width: 100%;
+            margin: -20px 0;
             &::placeholder {
                 font-weight: normal;
                 color: #bfccd6;
@@ -296,15 +304,20 @@
             }
         }
         &__img {
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             cursor: pointer;
             &_settings {
                 margin: 0 0 0 auto;
+                background: url("../images/settings.svg") 0%/ 20px no-repeat !important;
             }
             &_magnifyingglass {
                 margin-right: 12px;
                 margin-left: 12px;
+                color: white;
+                background: url("../images/magnifyingglass.svg") 0%/ 20px no-repeat !important;
+                padding-left: 7%;
+                margin-right: -2%;
             }
         }
     }
@@ -313,6 +326,7 @@
         flex-wrap: wrap;
         width: 100%;
         flex-shrink: 0;
+        height: 63vh;
         .table {
             &__title,
             &__block {
@@ -877,7 +891,7 @@
             }
         }
         &__active {
-            bottom: -300px;
+            bottom: -287px;
             .span__close {
                 background-image: url("https://icongr.am/entypo/chevron-up.svg?color=8a9ba8");
                 width: 16px;
@@ -890,8 +904,7 @@
             }
             .sidebar__title{
                  .span__name {
-                position: absolute;
-                top: 0;
+               
             }
             }
            

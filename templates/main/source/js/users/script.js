@@ -60,7 +60,7 @@ $(document).ready(function () {
     this.textContent = this.textContent === 'Показать' ? 'Скрыть' : 'Показать';
   });
   $(".js_nav__text").click(function () {
-    $('.active').removeClass("active");
+    $('.js_nav__text').removeClass("active");
     $(this).toggleClass("active");
   });
   $(".js-table__block").click(function () {
